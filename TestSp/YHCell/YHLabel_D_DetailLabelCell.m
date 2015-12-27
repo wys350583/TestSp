@@ -22,6 +22,9 @@
 - (void)setUI {
     [super setUI];
     
+    [self.lab removeFromSuperview];
+    [self.contentView addSubview:self.lab];
+    
     [self.lab mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.contentView).offset(cellLeftOffset);
         make.centerY.equalTo(self.contentView).offset(-7);

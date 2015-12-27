@@ -11,24 +11,58 @@
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic, strong)NSArray *cellTypes;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.cellTypes = @[
+                       @(YHCellTypeLab),
+                       @(YHCellTypeLabArrowR),
+                       @(YHCellTypeLabDetailLab),
+                       @(YHCellTypeLabDetailLabArrowR),
+                       @(YHCellTypeLab_D_DetailLab),
+                       @(YHCellTypeLab_D_DetailLabArrowR),
+                       @(YHCellTypeLabTxfDef),
+                       @(YHCellTypeLabTxfNum),
+                       @(YHCellTypeLabTxfIdcard),
+                       @(YHCellTypeLabTxfPsw),
+                       @(YHCellTypeLabTxfArrowR),
+                       @(YHCellTypeLabSingleBtnSingleBtn),
+                       @(YHCellTypeImgV),
+                       @(YHCellTypeImgVLab),
+                       @(YHCellTypeImgVLabArrowR),
+                       @(YHCellTypeImgVLabDetailLab),
+                       @(YHCellTypeImgVLabDetailLabArrowR),
+                       @(YHCellTypeImgVLab_D_DetailLab),
+                       @(YHCellTypeImgVLab_D_DetailLabArrowR),
+                       @(YHCellTypeImgVTxfDef),
+                       @(YHCellTypeImgVTxfNum),
+                       @(YHCellTypeImgVTxfIdcard),
+                       @(YHCellTypeImgVTxfPsw),
+                       @(YHCellTypeImgVTxfArrowR),
+                       @(YHCellTypeImgVSingleBtnSingleBtn),
+                       ];
+    
     UITableView *tv = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     [self.view addSubview:tv];
     tv.delegate = self;
     tv.dataSource = self;
     tv.tableFooterView = [[UIView alloc] init];
 
+    
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithType:YHCellTypeImgVSingleBtnSingleBtn];
+        YHCellType type = (YHCellType)[self.cellTypes[indexPath.row] integerValue];
+        cell = [[UITableViewCell alloc] initWithType:type];
     }
     
     return cell;
@@ -36,7 +70,7 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return self.cellTypes.count;
 }
 
 @end
