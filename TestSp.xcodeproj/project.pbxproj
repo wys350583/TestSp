@@ -7,6 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5DBBAE3D1F8177E87A66884 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F019EC5863FCE7CD84F342E3 /* libPods.a */; };
+		F85F4C6E1C2EF1650050BD77 /* UITableViewCell+YHKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C6D1C2EF1650050BD77 /* UITableViewCell+YHKit.m */; };
+		F85F4C711C2EF18F0050BD77 /* YHCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C701C2EF18F0050BD77 /* YHCell.m */; };
+		F85F4C741C2EF4C50050BD77 /* YHLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C731C2EF4C50050BD77 /* YHLabelCell.m */; };
+		F85F4C771C2EF4F00050BD77 /* YHImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C761C2EF4F00050BD77 /* YHImageCell.m */; };
+		F85F4C7E1C2FC3460050BD77 /* YHLabelArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C7D1C2FC3460050BD77 /* YHLabelArrowRightCell.m */; };
+		F85F4C811C2FC5D90050BD77 /* YHLabelDetailLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C801C2FC5D90050BD77 /* YHLabelDetailLabelCell.m */; };
+		F85F4C841C2FC9BD0050BD77 /* YHLabelDetailLabelArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C831C2FC9BD0050BD77 /* YHLabelDetailLabelArrowRightCell.m */; };
+		F85F4C871C2FCBB00050BD77 /* YHLabel_D_DetailLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C861C2FCBB00050BD77 /* YHLabel_D_DetailLabelCell.m */; };
+		F85F4C8A1C2FD1430050BD77 /* YHLabel_D_DetailLabelArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C891C2FD1430050BD77 /* YHLabel_D_DetailLabelArrowRightCell.m */; };
+		F85F4C8D1C2FD2EC0050BD77 /* YHLabelTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C8C1C2FD2EC0050BD77 /* YHLabelTextFieldCell.m */; };
+		F85F4C901C2FDC160050BD77 /* YHLabelTextFieldNumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C8F1C2FDC160050BD77 /* YHLabelTextFieldNumCell.m */; };
+		F85F4C931C2FDC640050BD77 /* YHLabelTextFieldIdcardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C921C2FDC640050BD77 /* YHLabelTextFieldIdcardCell.m */; };
+		F85F4C961C2FDC9A0050BD77 /* YHLabelTextFieldPswCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C951C2FDC9A0050BD77 /* YHLabelTextFieldPswCell.m */; };
+		F85F4C991C2FDD760050BD77 /* YHLabelTextFieldArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C981C2FDD760050BD77 /* YHLabelTextFieldArrowRightCell.m */; };
+		F85F4C9C1C2FE25C0050BD77 /* YHImageLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C9B1C2FE25C0050BD77 /* YHImageLabelCell.m */; };
+		F85F4C9F1C2FE5B70050BD77 /* YHImageLabelArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C9E1C2FE5B70050BD77 /* YHImageLabelArrowRightCell.m */; };
+		F85F4CA21C2FE7E80050BD77 /* YHImageLabelDetailLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CA11C2FE7E80050BD77 /* YHImageLabelDetailLabelCell.m */; };
+		F85F4CA51C2FF0280050BD77 /* YHImageLabelDetailLabelArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CA41C2FF0280050BD77 /* YHImageLabelDetailLabelArrowRightCell.m */; };
+		F85F4CA81C2FF1640050BD77 /* YHImageLabel_D_DetailLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CA71C2FF1640050BD77 /* YHImageLabel_D_DetailLabelCell.m */; };
+		F85F4CAB1C2FF26C0050BD77 /* YHImageLabel_D_DetailLabelArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CAA1C2FF26C0050BD77 /* YHImageLabel_D_DetailLabelArrowRightCell.m */; };
+		F85F4CAE1C2FF37F0050BD77 /* YHImageTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CAD1C2FF37F0050BD77 /* YHImageTextFieldCell.m */; };
+		F85F4CB11C2FF4560050BD77 /* YHImageTextFieldNumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CB01C2FF4560050BD77 /* YHImageTextFieldNumCell.m */; };
+		F85F4CB41C2FF4820050BD77 /* YHImageTextFieldIdcardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CB31C2FF4820050BD77 /* YHImageTextFieldIdcardCell.m */; };
+		F85F4CB71C2FF4A40050BD77 /* YHImageTextFieldPswCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CB61C2FF4A40050BD77 /* YHImageTextFieldPswCell.m */; };
+		F85F4CBA1C2FF4CF0050BD77 /* YHImageTextFieldArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CB91C2FF4CF0050BD77 /* YHImageTextFieldArrowRightCell.m */; };
+		F85F4CC01C2FF7070050BD77 /* singleBtnImage_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F85F4CBC1C2FF7070050BD77 /* singleBtnImage_normal@2x.png */; };
+		F85F4CC11C2FF7070050BD77 /* singleBtnImage_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F85F4CBD1C2FF7070050BD77 /* singleBtnImage_normal@3x.png */; };
+		F85F4CC21C2FF7070050BD77 /* singleBtnImage_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F85F4CBE1C2FF7070050BD77 /* singleBtnImage_selected@2x.png */; };
+		F85F4CC31C2FF7070050BD77 /* singleBtnImage_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F85F4CBF1C2FF7070050BD77 /* singleBtnImage_selected@3x.png */; };
+		F85F4CC61C2FF74F0050BD77 /* YHLabelSingleBtnSingleBtnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CC51C2FF74F0050BD77 /* YHLabelSingleBtnSingleBtnCell.m */; };
+		F85F4CC91C30043F0050BD77 /* YHImageSingleBtnSingleBtnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CC81C30043F0050BD77 /* YHImageSingleBtnSingleBtnCell.m */; };
 		F884A0281C2AD52B000A9F18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F884A0271C2AD52B000A9F18 /* main.m */; };
 		F884A02B1C2AD52B000A9F18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F884A02A1C2AD52B000A9F18 /* AppDelegate.m */; };
 		F884A02E1C2AD52B000A9F18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F884A02D1C2AD52B000A9F18 /* ViewController.m */; };
@@ -16,6 +48,68 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C682B8A9E283CC8C01087B2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		931A578D8F350F784634D9C8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F019EC5863FCE7CD84F342E3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F85F4C6C1C2EF1650050BD77 /* UITableViewCell+YHKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+YHKit.h"; sourceTree = "<group>"; };
+		F85F4C6D1C2EF1650050BD77 /* UITableViewCell+YHKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+YHKit.m"; sourceTree = "<group>"; };
+		F85F4C6F1C2EF18F0050BD77 /* YHCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHCell.h; sourceTree = "<group>"; };
+		F85F4C701C2EF18F0050BD77 /* YHCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHCell.m; sourceTree = "<group>"; };
+		F85F4C721C2EF4C50050BD77 /* YHLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelCell.h; sourceTree = "<group>"; };
+		F85F4C731C2EF4C50050BD77 /* YHLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelCell.m; sourceTree = "<group>"; };
+		F85F4C751C2EF4F00050BD77 /* YHImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageCell.h; sourceTree = "<group>"; };
+		F85F4C761C2EF4F00050BD77 /* YHImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageCell.m; sourceTree = "<group>"; };
+		F85F4C7B1C2EFDE20050BD77 /* YHCellDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHCellDefine.h; sourceTree = "<group>"; };
+		F85F4C7C1C2FC3460050BD77 /* YHLabelArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelArrowRightCell.h; sourceTree = "<group>"; };
+		F85F4C7D1C2FC3460050BD77 /* YHLabelArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelArrowRightCell.m; sourceTree = "<group>"; };
+		F85F4C7F1C2FC5D90050BD77 /* YHLabelDetailLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelDetailLabelCell.h; sourceTree = "<group>"; };
+		F85F4C801C2FC5D90050BD77 /* YHLabelDetailLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelDetailLabelCell.m; sourceTree = "<group>"; };
+		F85F4C821C2FC9BD0050BD77 /* YHLabelDetailLabelArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelDetailLabelArrowRightCell.h; sourceTree = "<group>"; };
+		F85F4C831C2FC9BD0050BD77 /* YHLabelDetailLabelArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelDetailLabelArrowRightCell.m; sourceTree = "<group>"; };
+		F85F4C851C2FCBB00050BD77 /* YHLabel_D_DetailLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabel_D_DetailLabelCell.h; sourceTree = "<group>"; };
+		F85F4C861C2FCBB00050BD77 /* YHLabel_D_DetailLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabel_D_DetailLabelCell.m; sourceTree = "<group>"; };
+		F85F4C881C2FD1430050BD77 /* YHLabel_D_DetailLabelArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabel_D_DetailLabelArrowRightCell.h; sourceTree = "<group>"; };
+		F85F4C891C2FD1430050BD77 /* YHLabel_D_DetailLabelArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabel_D_DetailLabelArrowRightCell.m; sourceTree = "<group>"; };
+		F85F4C8B1C2FD2EC0050BD77 /* YHLabelTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelTextFieldCell.h; sourceTree = "<group>"; };
+		F85F4C8C1C2FD2EC0050BD77 /* YHLabelTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelTextFieldCell.m; sourceTree = "<group>"; };
+		F85F4C8E1C2FDC160050BD77 /* YHLabelTextFieldNumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelTextFieldNumCell.h; sourceTree = "<group>"; };
+		F85F4C8F1C2FDC160050BD77 /* YHLabelTextFieldNumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelTextFieldNumCell.m; sourceTree = "<group>"; };
+		F85F4C911C2FDC640050BD77 /* YHLabelTextFieldIdcardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelTextFieldIdcardCell.h; sourceTree = "<group>"; };
+		F85F4C921C2FDC640050BD77 /* YHLabelTextFieldIdcardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelTextFieldIdcardCell.m; sourceTree = "<group>"; };
+		F85F4C941C2FDC9A0050BD77 /* YHLabelTextFieldPswCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelTextFieldPswCell.h; sourceTree = "<group>"; };
+		F85F4C951C2FDC9A0050BD77 /* YHLabelTextFieldPswCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelTextFieldPswCell.m; sourceTree = "<group>"; };
+		F85F4C971C2FDD760050BD77 /* YHLabelTextFieldArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelTextFieldArrowRightCell.h; sourceTree = "<group>"; };
+		F85F4C981C2FDD760050BD77 /* YHLabelTextFieldArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelTextFieldArrowRightCell.m; sourceTree = "<group>"; };
+		F85F4C9A1C2FE25C0050BD77 /* YHImageLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageLabelCell.h; sourceTree = "<group>"; };
+		F85F4C9B1C2FE25C0050BD77 /* YHImageLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageLabelCell.m; sourceTree = "<group>"; };
+		F85F4C9D1C2FE5B70050BD77 /* YHImageLabelArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageLabelArrowRightCell.h; sourceTree = "<group>"; };
+		F85F4C9E1C2FE5B70050BD77 /* YHImageLabelArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageLabelArrowRightCell.m; sourceTree = "<group>"; };
+		F85F4CA01C2FE7E80050BD77 /* YHImageLabelDetailLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageLabelDetailLabelCell.h; sourceTree = "<group>"; };
+		F85F4CA11C2FE7E80050BD77 /* YHImageLabelDetailLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageLabelDetailLabelCell.m; sourceTree = "<group>"; };
+		F85F4CA31C2FF0280050BD77 /* YHImageLabelDetailLabelArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageLabelDetailLabelArrowRightCell.h; sourceTree = "<group>"; };
+		F85F4CA41C2FF0280050BD77 /* YHImageLabelDetailLabelArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageLabelDetailLabelArrowRightCell.m; sourceTree = "<group>"; };
+		F85F4CA61C2FF1640050BD77 /* YHImageLabel_D_DetailLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageLabel_D_DetailLabelCell.h; sourceTree = "<group>"; };
+		F85F4CA71C2FF1640050BD77 /* YHImageLabel_D_DetailLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageLabel_D_DetailLabelCell.m; sourceTree = "<group>"; };
+		F85F4CA91C2FF26C0050BD77 /* YHImageLabel_D_DetailLabelArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageLabel_D_DetailLabelArrowRightCell.h; sourceTree = "<group>"; };
+		F85F4CAA1C2FF26C0050BD77 /* YHImageLabel_D_DetailLabelArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageLabel_D_DetailLabelArrowRightCell.m; sourceTree = "<group>"; };
+		F85F4CAC1C2FF37F0050BD77 /* YHImageTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageTextFieldCell.h; sourceTree = "<group>"; };
+		F85F4CAD1C2FF37F0050BD77 /* YHImageTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageTextFieldCell.m; sourceTree = "<group>"; };
+		F85F4CAF1C2FF4560050BD77 /* YHImageTextFieldNumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageTextFieldNumCell.h; sourceTree = "<group>"; };
+		F85F4CB01C2FF4560050BD77 /* YHImageTextFieldNumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageTextFieldNumCell.m; sourceTree = "<group>"; };
+		F85F4CB21C2FF4820050BD77 /* YHImageTextFieldIdcardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageTextFieldIdcardCell.h; sourceTree = "<group>"; };
+		F85F4CB31C2FF4820050BD77 /* YHImageTextFieldIdcardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageTextFieldIdcardCell.m; sourceTree = "<group>"; };
+		F85F4CB51C2FF4A40050BD77 /* YHImageTextFieldPswCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageTextFieldPswCell.h; sourceTree = "<group>"; };
+		F85F4CB61C2FF4A40050BD77 /* YHImageTextFieldPswCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageTextFieldPswCell.m; sourceTree = "<group>"; };
+		F85F4CB81C2FF4CF0050BD77 /* YHImageTextFieldArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageTextFieldArrowRightCell.h; sourceTree = "<group>"; };
+		F85F4CB91C2FF4CF0050BD77 /* YHImageTextFieldArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageTextFieldArrowRightCell.m; sourceTree = "<group>"; };
+		F85F4CBC1C2FF7070050BD77 /* singleBtnImage_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "singleBtnImage_normal@2x.png"; sourceTree = "<group>"; };
+		F85F4CBD1C2FF7070050BD77 /* singleBtnImage_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "singleBtnImage_normal@3x.png"; sourceTree = "<group>"; };
+		F85F4CBE1C2FF7070050BD77 /* singleBtnImage_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "singleBtnImage_selected@2x.png"; sourceTree = "<group>"; };
+		F85F4CBF1C2FF7070050BD77 /* singleBtnImage_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "singleBtnImage_selected@3x.png"; sourceTree = "<group>"; };
+		F85F4CC41C2FF74F0050BD77 /* YHLabelSingleBtnSingleBtnCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelSingleBtnSingleBtnCell.h; sourceTree = "<group>"; };
+		F85F4CC51C2FF74F0050BD77 /* YHLabelSingleBtnSingleBtnCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelSingleBtnSingleBtnCell.m; sourceTree = "<group>"; };
+		F85F4CC71C30043F0050BD77 /* YHImageSingleBtnSingleBtnCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageSingleBtnSingleBtnCell.h; sourceTree = "<group>"; };
+		F85F4CC81C30043F0050BD77 /* YHImageSingleBtnSingleBtnCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageSingleBtnSingleBtnCell.m; sourceTree = "<group>"; };
 		F884A0231C2AD52B000A9F18 /* TestSp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F884A0271C2AD52B000A9F18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F884A0291C2AD52B000A9F18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +127,111 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5DBBAE3D1F8177E87A66884 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E41C98569674ECAD16E093A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F019EC5863FCE7CD84F342E3 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87192B9EB00A052EEED1A22F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C682B8A9E283CC8C01087B2 /* Pods.debug.xcconfig */,
+				931A578D8F350F784634D9C8 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F85F4C6B1C2EF1650050BD77 /* YHCell */ = {
+			isa = PBXGroup;
+			children = (
+				F85F4C6C1C2EF1650050BD77 /* UITableViewCell+YHKit.h */,
+				F85F4C6D1C2EF1650050BD77 /* UITableViewCell+YHKit.m */,
+				F85F4C7B1C2EFDE20050BD77 /* YHCellDefine.h */,
+				F85F4C6F1C2EF18F0050BD77 /* YHCell.h */,
+				F85F4C701C2EF18F0050BD77 /* YHCell.m */,
+				F85F4C721C2EF4C50050BD77 /* YHLabelCell.h */,
+				F85F4C731C2EF4C50050BD77 /* YHLabelCell.m */,
+				F85F4C7C1C2FC3460050BD77 /* YHLabelArrowRightCell.h */,
+				F85F4C7D1C2FC3460050BD77 /* YHLabelArrowRightCell.m */,
+				F85F4C7F1C2FC5D90050BD77 /* YHLabelDetailLabelCell.h */,
+				F85F4C801C2FC5D90050BD77 /* YHLabelDetailLabelCell.m */,
+				F85F4C821C2FC9BD0050BD77 /* YHLabelDetailLabelArrowRightCell.h */,
+				F85F4C831C2FC9BD0050BD77 /* YHLabelDetailLabelArrowRightCell.m */,
+				F85F4C851C2FCBB00050BD77 /* YHLabel_D_DetailLabelCell.h */,
+				F85F4C861C2FCBB00050BD77 /* YHLabel_D_DetailLabelCell.m */,
+				F85F4C881C2FD1430050BD77 /* YHLabel_D_DetailLabelArrowRightCell.h */,
+				F85F4C891C2FD1430050BD77 /* YHLabel_D_DetailLabelArrowRightCell.m */,
+				F85F4C8B1C2FD2EC0050BD77 /* YHLabelTextFieldCell.h */,
+				F85F4C8C1C2FD2EC0050BD77 /* YHLabelTextFieldCell.m */,
+				F85F4C8E1C2FDC160050BD77 /* YHLabelTextFieldNumCell.h */,
+				F85F4C8F1C2FDC160050BD77 /* YHLabelTextFieldNumCell.m */,
+				F85F4C911C2FDC640050BD77 /* YHLabelTextFieldIdcardCell.h */,
+				F85F4C921C2FDC640050BD77 /* YHLabelTextFieldIdcardCell.m */,
+				F85F4C941C2FDC9A0050BD77 /* YHLabelTextFieldPswCell.h */,
+				F85F4C951C2FDC9A0050BD77 /* YHLabelTextFieldPswCell.m */,
+				F85F4C971C2FDD760050BD77 /* YHLabelTextFieldArrowRightCell.h */,
+				F85F4C981C2FDD760050BD77 /* YHLabelTextFieldArrowRightCell.m */,
+				F85F4CC41C2FF74F0050BD77 /* YHLabelSingleBtnSingleBtnCell.h */,
+				F85F4CC51C2FF74F0050BD77 /* YHLabelSingleBtnSingleBtnCell.m */,
+				F85F4C751C2EF4F00050BD77 /* YHImageCell.h */,
+				F85F4C761C2EF4F00050BD77 /* YHImageCell.m */,
+				F85F4C9A1C2FE25C0050BD77 /* YHImageLabelCell.h */,
+				F85F4C9B1C2FE25C0050BD77 /* YHImageLabelCell.m */,
+				F85F4C9D1C2FE5B70050BD77 /* YHImageLabelArrowRightCell.h */,
+				F85F4C9E1C2FE5B70050BD77 /* YHImageLabelArrowRightCell.m */,
+				F85F4CA01C2FE7E80050BD77 /* YHImageLabelDetailLabelCell.h */,
+				F85F4CA11C2FE7E80050BD77 /* YHImageLabelDetailLabelCell.m */,
+				F85F4CA31C2FF0280050BD77 /* YHImageLabelDetailLabelArrowRightCell.h */,
+				F85F4CA41C2FF0280050BD77 /* YHImageLabelDetailLabelArrowRightCell.m */,
+				F85F4CA61C2FF1640050BD77 /* YHImageLabel_D_DetailLabelCell.h */,
+				F85F4CA71C2FF1640050BD77 /* YHImageLabel_D_DetailLabelCell.m */,
+				F85F4CA91C2FF26C0050BD77 /* YHImageLabel_D_DetailLabelArrowRightCell.h */,
+				F85F4CAA1C2FF26C0050BD77 /* YHImageLabel_D_DetailLabelArrowRightCell.m */,
+				F85F4CAC1C2FF37F0050BD77 /* YHImageTextFieldCell.h */,
+				F85F4CAD1C2FF37F0050BD77 /* YHImageTextFieldCell.m */,
+				F85F4CAF1C2FF4560050BD77 /* YHImageTextFieldNumCell.h */,
+				F85F4CB01C2FF4560050BD77 /* YHImageTextFieldNumCell.m */,
+				F85F4CB21C2FF4820050BD77 /* YHImageTextFieldIdcardCell.h */,
+				F85F4CB31C2FF4820050BD77 /* YHImageTextFieldIdcardCell.m */,
+				F85F4CB51C2FF4A40050BD77 /* YHImageTextFieldPswCell.h */,
+				F85F4CB61C2FF4A40050BD77 /* YHImageTextFieldPswCell.m */,
+				F85F4CB81C2FF4CF0050BD77 /* YHImageTextFieldArrowRightCell.h */,
+				F85F4CB91C2FF4CF0050BD77 /* YHImageTextFieldArrowRightCell.m */,
+				F85F4CC71C30043F0050BD77 /* YHImageSingleBtnSingleBtnCell.h */,
+				F85F4CC81C30043F0050BD77 /* YHImageSingleBtnSingleBtnCell.m */,
+				F85F4CBB1C2FF7070050BD77 /* Resource */,
+			);
+			path = YHCell;
+			sourceTree = "<group>";
+		};
+		F85F4CBB1C2FF7070050BD77 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F85F4CBC1C2FF7070050BD77 /* singleBtnImage_normal@2x.png */,
+				F85F4CBD1C2FF7070050BD77 /* singleBtnImage_normal@3x.png */,
+				F85F4CBE1C2FF7070050BD77 /* singleBtnImage_selected@2x.png */,
+				F85F4CBF1C2FF7070050BD77 /* singleBtnImage_selected@3x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		F884A01A1C2AD52B000A9F18 = {
 			isa = PBXGroup;
 			children = (
 				F884A0251C2AD52B000A9F18 /* TestSp */,
 				F884A0241C2AD52B000A9F18 /* Products */,
+				87192B9EB00A052EEED1A22F /* Pods */,
+				1E41C98569674ECAD16E093A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +246,7 @@
 		F884A0251C2AD52B000A9F18 /* TestSp */ = {
 			isa = PBXGroup;
 			children = (
+				F85F4C6B1C2EF1650050BD77 /* YHCell */,
 				F884A0291C2AD52B000A9F18 /* AppDelegate.h */,
 				F884A02A1C2AD52B000A9F18 /* AppDelegate.m */,
 				F884A02C1C2AD52B000A9F18 /* ViewController.h */,
@@ -86,9 +275,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F884A03A1C2AD52B000A9F18 /* Build configuration list for PBXNativeTarget "TestSp" */;
 			buildPhases = (
+				3953D754C8C24C9246092B07 /* Check Pods Manifest.lock */,
 				F884A01F1C2AD52B000A9F18 /* Sources */,
 				F884A0201C2AD52B000A9F18 /* Frameworks */,
 				F884A0211C2AD52B000A9F18 /* Resources */,
+				F293E2DF341F51F8811F6AC0 /* Embed Pods Frameworks */,
+				293B596E0D18A658A05F8461 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,21 +330,100 @@
 			buildActionMask = 2147483647;
 			files = (
 				F884A0361C2AD52B000A9F18 /* LaunchScreen.storyboard in Resources */,
+				F85F4CC11C2FF7070050BD77 /* singleBtnImage_normal@3x.png in Resources */,
+				F85F4CC31C2FF7070050BD77 /* singleBtnImage_selected@3x.png in Resources */,
 				F884A0331C2AD52B000A9F18 /* Assets.xcassets in Resources */,
+				F85F4CC01C2FF7070050BD77 /* singleBtnImage_normal@2x.png in Resources */,
+				F85F4CC21C2FF7070050BD77 /* singleBtnImage_selected@2x.png in Resources */,
 				F884A0311C2AD52B000A9F18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		293B596E0D18A658A05F8461 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3953D754C8C24C9246092B07 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F293E2DF341F51F8811F6AC0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F884A01F1C2AD52B000A9F18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F85F4C871C2FCBB00050BD77 /* YHLabel_D_DetailLabelCell.m in Sources */,
+				F85F4CBA1C2FF4CF0050BD77 /* YHImageTextFieldArrowRightCell.m in Sources */,
+				F85F4C8D1C2FD2EC0050BD77 /* YHLabelTextFieldCell.m in Sources */,
+				F85F4C9C1C2FE25C0050BD77 /* YHImageLabelCell.m in Sources */,
 				F884A02E1C2AD52B000A9F18 /* ViewController.m in Sources */,
+				F85F4CA51C2FF0280050BD77 /* YHImageLabelDetailLabelArrowRightCell.m in Sources */,
 				F884A02B1C2AD52B000A9F18 /* AppDelegate.m in Sources */,
+				F85F4C961C2FDC9A0050BD77 /* YHLabelTextFieldPswCell.m in Sources */,
+				F85F4C8A1C2FD1430050BD77 /* YHLabel_D_DetailLabelArrowRightCell.m in Sources */,
+				F85F4C901C2FDC160050BD77 /* YHLabelTextFieldNumCell.m in Sources */,
 				F884A0281C2AD52B000A9F18 /* main.m in Sources */,
+				F85F4C811C2FC5D90050BD77 /* YHLabelDetailLabelCell.m in Sources */,
+				F85F4C931C2FDC640050BD77 /* YHLabelTextFieldIdcardCell.m in Sources */,
+				F85F4C711C2EF18F0050BD77 /* YHCell.m in Sources */,
+				F85F4CA21C2FE7E80050BD77 /* YHImageLabelDetailLabelCell.m in Sources */,
+				F85F4CB41C2FF4820050BD77 /* YHImageTextFieldIdcardCell.m in Sources */,
+				F85F4CB71C2FF4A40050BD77 /* YHImageTextFieldPswCell.m in Sources */,
+				F85F4C771C2EF4F00050BD77 /* YHImageCell.m in Sources */,
+				F85F4C991C2FDD760050BD77 /* YHLabelTextFieldArrowRightCell.m in Sources */,
+				F85F4C7E1C2FC3460050BD77 /* YHLabelArrowRightCell.m in Sources */,
+				F85F4C6E1C2EF1650050BD77 /* UITableViewCell+YHKit.m in Sources */,
+				F85F4CC91C30043F0050BD77 /* YHImageSingleBtnSingleBtnCell.m in Sources */,
+				F85F4CC61C2FF74F0050BD77 /* YHLabelSingleBtnSingleBtnCell.m in Sources */,
+				F85F4C9F1C2FE5B70050BD77 /* YHImageLabelArrowRightCell.m in Sources */,
+				F85F4CB11C2FF4560050BD77 /* YHImageTextFieldNumCell.m in Sources */,
+				F85F4CA81C2FF1640050BD77 /* YHImageLabel_D_DetailLabelCell.m in Sources */,
+				F85F4C741C2EF4C50050BD77 /* YHLabelCell.m in Sources */,
+				F85F4CAE1C2FF37F0050BD77 /* YHImageTextFieldCell.m in Sources */,
+				F85F4C841C2FC9BD0050BD77 /* YHLabelDetailLabelArrowRightCell.m in Sources */,
+				F85F4CAB1C2FF26C0050BD77 /* YHImageLabel_D_DetailLabelArrowRightCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +531,7 @@
 		};
 		F884A03B1C2AD52B000A9F18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C682B8A9E283CC8C01087B2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestSp/Info.plist;
@@ -271,6 +543,7 @@
 		};
 		F884A03C1C2AD52B000A9F18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 931A578D8F350F784634D9C8 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestSp/Info.plist;
@@ -299,6 +572,7 @@
 				F884A03C1C2AD52B000A9F18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
