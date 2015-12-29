@@ -22,6 +22,8 @@
 - (void)setUI {
     [super setUI];
     
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     [self.lab mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.contentView).offset(cellLeftOffset);
         make.centerY.equalTo(self.contentView);
@@ -40,12 +42,15 @@
         detailLab.font = [UIFont systemFontOfSize:cellDetailLabFontSize];
         detailLab.textAlignment = NSTextAlignmentRight;
         detailLab.textColor = cellDetailLabTextColor;
-        
-        detailLab.text = @"贷款贷款贷款贷款贷款贷款贷款贷款";
-        
+                
         detailLab;
     });
     
+}
+
+- (void)setDisPlayData:(YHCellModel *)model {
+    [super setDisPlayData:model];
+    self.detailLab.text = model.detailLabText ? model.detailLabText : @"";
 }
 
 

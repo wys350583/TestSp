@@ -29,9 +29,13 @@
             make.centerY.equalTo(self.contentView);
             make.width.height.equalTo(@cellImgVSize);
         }];
-        imgV.backgroundColor = [UIColor orangeColor];
         imgV;
     });
+}
+
+- (void)setDisPlayData:(YHCellModel *)model {
+    [super setDisPlayData:model];
+    self.imgV.image = [UIImage imageNamed:model.imgVImageName ? model.imgVImageName : @""];
 }
 
 @end

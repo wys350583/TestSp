@@ -7,11 +7,14 @@
 //
 
 #import "ViewController.h"
-#import "UITableViewCell+YHKit.h"
+#import "YHTableView.h"
+#import "TestModel.h"
 
-@interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface ViewController ()<YHTableViewDelegate>
 
-@property (nonatomic, strong)NSArray *cellTypes;
+@property (nonatomic, strong)NSMutableArray *cells;
+
+@property (nonatomic, strong)TestModel *model;
 
 @end
 
@@ -20,81 +23,94 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.cellTypes = @[
-                       @(YHCellTypeLab),
-                       @(YHCellTypeLabArrowR),
-                       @(YHCellTypeLabDetailLab),
-                       @(YHCellTypeLabDetailLabArrowR),
-                       @(YHCellTypeLab_D_DetailLab),
-                       @(YHCellTypeLab_D_DetailLabArrowR),
-                       @(YHCellTypeLabTxfDef),
-                       @(YHCellTypeLabTxfNum),
-                       @(YHCellTypeLabTxfIdcard),
-                       @(YHCellTypeLabTxfPsw),
-                       @(YHCellTypeLabTxfArrowR),
-                       @(YHCellTypeLabSingleBtnSingleBtn),
-                       @(YHCellTypeImgV),
-                       @(YHCellTypeImgVLab),
-                       @(YHCellTypeImgVLabArrowR),
-                       @(YHCellTypeImgVLabDetailLab),
-                       @(YHCellTypeImgVLabDetailLabArrowR),
-                       @(YHCellTypeImgVLab_D_DetailLab),
-                       @(YHCellTypeImgVLab_D_DetailLabArrowR),
-                       @(YHCellTypeImgVTxfDef),
-                       @(YHCellTypeImgVTxfNum),
-                       @(YHCellTypeImgVTxfIdcard),
-                       @(YHCellTypeImgVTxfPsw),
-                       @(YHCellTypeImgVTxfArrowR),
-                       @(YHCellTypeImgVSingleBtnSingleBtn),
-                       ];
+    self.model = [[TestModel alloc] init];
+    self.model.text0 = @"text0";
+    self.model.text1 = @"text1";
+    self.model.text2 = @"text2";
+    self.model.text3 = @"text3";
+    self.model.text4 = @"text4";
+    self.model.selectIndex = 0;
     
-    UITableView *tv = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    YHCellModel *model0 = [[YHCellModel alloc] init];
+    model0.cellType = YHCellTypeLabTxfDef;
+    model0.labText = @"0贷款";
+    model0.txfPlaceHolder = @"0先生，您需要贷款么？";
+    model0.keyString = @"text0";
+    
+    YHCellModel *model1 = [[YHCellModel alloc] init];
+    model1.cellType = YHCellTypeLabTxfNum;
+    model1.labText = @"1贷款";
+    model1.txfPlaceHolder = @"1先生，您需要贷款么？";
+    model1.keyString = @"text1";
+    
+    YHCellModel *model2 = [[YHCellModel alloc] init];
+    model2.cellType = YHCellTypeLabTxfIdcard;
+    model2.labText = @"2贷款";
+    model2.txfPlaceHolder = @"2先生，您需要贷款么？";
+    model2.keyString = @"text2";
+
+    YHCellModel *model3 = [[YHCellModel alloc] init];
+    model3.cellType = YHCellTypeLabTxfPsw;
+    model3.labText = @"3贷款";
+    model3.txfPlaceHolder = @"3先生，您需要贷款么？";
+    model3.keyString = @"text3";
+
+    YHCellModel *model4 = [[YHCellModel alloc] init];
+    model4.cellType = YHCellTypeLabTxfArrowR;
+    model4.labText = @"4贷款";
+    model4.txfPlaceHolder = @"4先生，您需要贷款么？";
+    model4.keyString = @"text4";
+    
+    YHCellModel *model5 = [[YHCellModel alloc] init];
+    model5.cellType = YHCellTypeLabSingleBtnSingleBtn;
+    model5.labText = @"5贷款";
+    model5.singleBtn0Title = @"50贷款";
+    model5.singleBtn1Title = @"51贷款";
+    model5.keyString = @"selectIndex";
+    
+    YHCellModel *model6 = [[YHCellModel alloc] init];
+    model6.cellType = YHCellTypeLabDetailLab0;
+    model6.labText = @"6贷款";
+    model6.detailLabText = @"6贷款贷款";
+    
+    self.cells = [@[
+                    [@[
+                       model0,
+                       model1,
+                       model2,
+                       model3,
+                       model4,
+                       ] mutableCopy],
+                    
+                    [@[
+                       model5,
+                       model6,
+                       ] mutableCopy],
+                    
+                    ] mutableCopy];
+
+    YHTableView *tv = [[YHTableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    [tv setCells:self.cells];
+    [tv setModel:self.model];
     [self.view addSubview:tv];
-    tv.delegate = self;
-    tv.dataSource = self;
-    tv.tableFooterView = [[UIView alloc] init];
-
+    tv.yhDelegate = self;
     
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.view.frame) - 30, CGRectGetWidth(self.view.frame), 30)];
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(btnAct) forControlEvents:UIControlEventTouchUpInside];
     
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (!cell) {
-        YHCellType type = (YHCellType)[self.cellTypes[indexPath.row] integerValue];
-        cell = [[UITableViewCell alloc] initWithType:type];
+- (void)tableView:(UITableView *)tableView cell:(UITableViewCell *)cell didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        if (indexPath.row == 4) {
+            [cell setTefText:@"老板，贷款吗？"];
+        }
     }
-    
-    return cell;
 }
 
+- (void)btnAct {
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.cellTypes.count;
 }
 
 @end
-
-//1.0需要用到cell默认的textLabel这样设
-//    if ([tv respondsToSelector:@selector(setSeparatorInset:)]) {
-//        [tv setSeparatorInset:UIEdgeInsetsZero];
-//    }
-//
-//    if ([tv respondsToSelector:@selector(setLayoutMargins:)]) {
-//        [tv setLayoutMargins:UIEdgeInsetsZero];
-//    }
-
-//1.1需要用到cell默认的textLabel这样设
-//- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
-//
-//{
-//    if (indexPath.row == [tableView numberOfRowsInSection:indexPath.section] - 1) {
-//        if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
-//            [cell setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, CGRectGetWidth(self.view.frame))];
-//        }
-//
-//        if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
-//            [cell setLayoutMargins:UIEdgeInsetsZero];
-//        }
-//    }
-//}

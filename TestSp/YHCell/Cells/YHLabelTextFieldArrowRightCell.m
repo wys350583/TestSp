@@ -33,4 +33,11 @@
     
 }
 
+- (void)setTefText:(NSString *)text {
+    self.txf.text = text;
+    if (text) {
+        [self.reqModel setValue:text forKey:self.disPlayModel.keyString];
+    }
+}
+
 @end

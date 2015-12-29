@@ -39,10 +39,14 @@
         lab.textColor = cellLabTestColor;
         lab.adjustsFontSizeToFitWidth = YES;
         lab.minimumScaleFactor = 0.7;
-        lab.text = @"贷款贷款贷款贷款";
         lab;
     });
     
+}
+
+- (void)setDisPlayData:(YHCellModel *)model {
+    [super setDisPlayData:model];
+    self.lab.text = model.labText ? model.labText : @"";
 }
 
 @end

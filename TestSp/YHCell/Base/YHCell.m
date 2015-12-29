@@ -8,6 +8,14 @@
 
 #import "YHCell.h"
 
+@interface YHCell()
+
+@property (nonatomic, strong)YHCellModel *model;
+
+@property (nonatomic, strong)id reqModel;
+
+@end
+
 @implementation YHCell
 
 - (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier
@@ -23,6 +31,22 @@
         
     self.accessoryType = UITableViewCellAccessoryNone;
 
+}
+
+- (void)setDisPlayData:(YHCellModel *)model {
+    _model = model;
+}
+
+- (YHCellModel *)disPlayModel {
+    return _model;
+}
+
+- (void)setReqData:(id)reqModel {
+    _reqModel = reqModel;
+}
+
+- (id)reqModel {
+    return _reqModel;
 }
 
 @end

@@ -10,4 +10,6 @@
 
 @interface YHLabelTextFieldArrowRightCell : YHLabelTextFieldCell
 
+- (void)setTefText:(NSString *)text;
+
 @end

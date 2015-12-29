@@ -40,14 +40,14 @@
         detailLab.font = [UIFont systemFontOfSize:cellDetailLabFontSize];
         detailLab.textAlignment = NSTextAlignmentRight;
         detailLab.textColor = cellDetailLabTextColor;
-        
-        detailLab.text = @"贷款贷款贷款贷款贷款贷款贷款贷款";
-        
         detailLab;
     });
-    
+
 }
 
-
+- (void)setDisPlayData:(YHCellModel *)model {
+    [super setDisPlayData:model];
+    self.detailLab.text = model.detailLabText ? model.detailLabText : @"";
+}
 
 @end

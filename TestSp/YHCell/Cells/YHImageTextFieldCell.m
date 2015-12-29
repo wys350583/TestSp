@@ -28,8 +28,8 @@
         UITextField *txf = [[UITextField alloc] init];
         [self.contentView addSubview:txf];
         [txf mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.bottom.equalTo(self.contentView);
             make.left.equalTo(self.imgV.mas_right).offset(leftSpace);
-            make.centerY.equalTo(self.contentView);
             make.right.equalTo(self.contentView).offset(cellRightOffset);
         }];
         txf.font = [UIFont systemFontOfSize:cellTxfFontSize];
@@ -37,9 +37,20 @@
         txf.textAlignment = NSTextAlignmentRight;
         txf.clearButtonMode = UITextFieldViewModeWhileEditing;
         txf.keyboardType = UIKeyboardTypeDefault;
-        txf.placeholder = @"先生，请问您需要贷款吗？";
         txf;
     });
+}
+
+- (void)setDisPlayData:(YHCellModel *)model {
+    [super setDisPlayData:model];
+    self.txf.placeholder = model.txfPlaceHolder ? model.txfPlaceHolder : @"";
+}
+
+- (void)setReqData:(id)reqModel {
+    [super setReqData:reqModel];
+    if (self.disPlayModel.keyString) {
+        self.txf.text = [reqModel valueForKey:self.disPlayModel.keyString];
+    }
 }
 
 @end

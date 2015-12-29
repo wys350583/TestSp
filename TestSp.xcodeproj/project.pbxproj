@@ -8,108 +8,57 @@
 
 /* Begin PBXBuildFile section */
 		F5DBBAE3D1F8177E87A66884 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F019EC5863FCE7CD84F342E3 /* libPods.a */; };
-		F85F4C6E1C2EF1650050BD77 /* UITableViewCell+YHKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C6D1C2EF1650050BD77 /* UITableViewCell+YHKit.m */; };
-		F85F4C711C2EF18F0050BD77 /* YHCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C701C2EF18F0050BD77 /* YHCell.m */; };
-		F85F4C741C2EF4C50050BD77 /* YHLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C731C2EF4C50050BD77 /* YHLabelCell.m */; };
-		F85F4C771C2EF4F00050BD77 /* YHImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C761C2EF4F00050BD77 /* YHImageCell.m */; };
-		F85F4C7E1C2FC3460050BD77 /* YHLabelArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C7D1C2FC3460050BD77 /* YHLabelArrowRightCell.m */; };
-		F85F4C811C2FC5D90050BD77 /* YHLabelDetailLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C801C2FC5D90050BD77 /* YHLabelDetailLabelCell.m */; };
-		F85F4C841C2FC9BD0050BD77 /* YHLabelDetailLabelArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C831C2FC9BD0050BD77 /* YHLabelDetailLabelArrowRightCell.m */; };
-		F85F4C871C2FCBB00050BD77 /* YHLabel_D_DetailLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C861C2FCBB00050BD77 /* YHLabel_D_DetailLabelCell.m */; };
-		F85F4C8A1C2FD1430050BD77 /* YHLabel_D_DetailLabelArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C891C2FD1430050BD77 /* YHLabel_D_DetailLabelArrowRightCell.m */; };
-		F85F4C8D1C2FD2EC0050BD77 /* YHLabelTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C8C1C2FD2EC0050BD77 /* YHLabelTextFieldCell.m */; };
-		F85F4C901C2FDC160050BD77 /* YHLabelTextFieldNumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C8F1C2FDC160050BD77 /* YHLabelTextFieldNumCell.m */; };
-		F85F4C931C2FDC640050BD77 /* YHLabelTextFieldIdcardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C921C2FDC640050BD77 /* YHLabelTextFieldIdcardCell.m */; };
-		F85F4C961C2FDC9A0050BD77 /* YHLabelTextFieldPswCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C951C2FDC9A0050BD77 /* YHLabelTextFieldPswCell.m */; };
-		F85F4C991C2FDD760050BD77 /* YHLabelTextFieldArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C981C2FDD760050BD77 /* YHLabelTextFieldArrowRightCell.m */; };
-		F85F4C9C1C2FE25C0050BD77 /* YHImageLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C9B1C2FE25C0050BD77 /* YHImageLabelCell.m */; };
-		F85F4C9F1C2FE5B70050BD77 /* YHImageLabelArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4C9E1C2FE5B70050BD77 /* YHImageLabelArrowRightCell.m */; };
-		F85F4CA21C2FE7E80050BD77 /* YHImageLabelDetailLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CA11C2FE7E80050BD77 /* YHImageLabelDetailLabelCell.m */; };
-		F85F4CA51C2FF0280050BD77 /* YHImageLabelDetailLabelArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CA41C2FF0280050BD77 /* YHImageLabelDetailLabelArrowRightCell.m */; };
-		F85F4CA81C2FF1640050BD77 /* YHImageLabel_D_DetailLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CA71C2FF1640050BD77 /* YHImageLabel_D_DetailLabelCell.m */; };
-		F85F4CAB1C2FF26C0050BD77 /* YHImageLabel_D_DetailLabelArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CAA1C2FF26C0050BD77 /* YHImageLabel_D_DetailLabelArrowRightCell.m */; };
-		F85F4CAE1C2FF37F0050BD77 /* YHImageTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CAD1C2FF37F0050BD77 /* YHImageTextFieldCell.m */; };
-		F85F4CB11C2FF4560050BD77 /* YHImageTextFieldNumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CB01C2FF4560050BD77 /* YHImageTextFieldNumCell.m */; };
-		F85F4CB41C2FF4820050BD77 /* YHImageTextFieldIdcardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CB31C2FF4820050BD77 /* YHImageTextFieldIdcardCell.m */; };
-		F85F4CB71C2FF4A40050BD77 /* YHImageTextFieldPswCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CB61C2FF4A40050BD77 /* YHImageTextFieldPswCell.m */; };
-		F85F4CBA1C2FF4CF0050BD77 /* YHImageTextFieldArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CB91C2FF4CF0050BD77 /* YHImageTextFieldArrowRightCell.m */; };
 		F85F4CC01C2FF7070050BD77 /* singleBtnImage_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F85F4CBC1C2FF7070050BD77 /* singleBtnImage_normal@2x.png */; };
 		F85F4CC11C2FF7070050BD77 /* singleBtnImage_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F85F4CBD1C2FF7070050BD77 /* singleBtnImage_normal@3x.png */; };
 		F85F4CC21C2FF7070050BD77 /* singleBtnImage_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F85F4CBE1C2FF7070050BD77 /* singleBtnImage_selected@2x.png */; };
 		F85F4CC31C2FF7070050BD77 /* singleBtnImage_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F85F4CBF1C2FF7070050BD77 /* singleBtnImage_selected@3x.png */; };
-		F85F4CC61C2FF74F0050BD77 /* YHLabelSingleBtnSingleBtnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CC51C2FF74F0050BD77 /* YHLabelSingleBtnSingleBtnCell.m */; };
-		F85F4CC91C30043F0050BD77 /* YHImageSingleBtnSingleBtnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85F4CC81C30043F0050BD77 /* YHImageSingleBtnSingleBtnCell.m */; };
 		F884A0281C2AD52B000A9F18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F884A0271C2AD52B000A9F18 /* main.m */; };
 		F884A02B1C2AD52B000A9F18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F884A02A1C2AD52B000A9F18 /* AppDelegate.m */; };
 		F884A02E1C2AD52B000A9F18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F884A02D1C2AD52B000A9F18 /* ViewController.m */; };
 		F884A0311C2AD52B000A9F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F884A02F1C2AD52B000A9F18 /* Main.storyboard */; };
 		F884A0331C2AD52B000A9F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F884A0321C2AD52B000A9F18 /* Assets.xcassets */; };
 		F884A0361C2AD52B000A9F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F884A0341C2AD52B000A9F18 /* LaunchScreen.storyboard */; };
+		F88F92FC1C31196C008F5602 /* UITableViewCell+YHKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92C51C31196B008F5602 /* UITableViewCell+YHKit.m */; };
+		F88F92FD1C31196C008F5602 /* YHCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92C71C31196B008F5602 /* YHCell.m */; };
+		F88F92FE1C31196C008F5602 /* YHImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92CB1C31196B008F5602 /* YHImageCell.m */; };
+		F88F92FF1C31196C008F5602 /* YHImageLabel_D_DetailLabelArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92CD1C31196B008F5602 /* YHImageLabel_D_DetailLabelArrowRightCell.m */; };
+		F88F93001C31196C008F5602 /* YHImageLabel_D_DetailLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92CF1C31196B008F5602 /* YHImageLabel_D_DetailLabelCell.m */; };
+		F88F93011C31196C008F5602 /* YHImageLabelArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92D11C31196B008F5602 /* YHImageLabelArrowRightCell.m */; };
+		F88F93021C31196C008F5602 /* YHImageLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92D31C31196B008F5602 /* YHImageLabelCell.m */; };
+		F88F93031C31196C008F5602 /* YHImageLabelDetailLabelArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92D51C31196B008F5602 /* YHImageLabelDetailLabelArrowRightCell.m */; };
+		F88F93041C31196C008F5602 /* YHImageLabelDetailLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92D71C31196B008F5602 /* YHImageLabelDetailLabelCell.m */; };
+		F88F93051C31196C008F5602 /* YHImageSingleBtnSingleBtnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92D91C31196B008F5602 /* YHImageSingleBtnSingleBtnCell.m */; };
+		F88F93061C31196C008F5602 /* YHImageTextFieldArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92DB1C31196B008F5602 /* YHImageTextFieldArrowRightCell.m */; };
+		F88F93071C31196C008F5602 /* YHImageTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92DD1C31196B008F5602 /* YHImageTextFieldCell.m */; };
+		F88F93081C31196C008F5602 /* YHImageTextFieldIdcardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92DF1C31196B008F5602 /* YHImageTextFieldIdcardCell.m */; };
+		F88F93091C31196C008F5602 /* YHImageTextFieldNumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92E11C31196B008F5602 /* YHImageTextFieldNumCell.m */; };
+		F88F930A1C31196C008F5602 /* YHImageTextFieldPswCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92E31C31196B008F5602 /* YHImageTextFieldPswCell.m */; };
+		F88F930B1C31196C008F5602 /* YHLabel_D_DetailLabelArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92E51C31196B008F5602 /* YHLabel_D_DetailLabelArrowRightCell.m */; };
+		F88F930C1C31196C008F5602 /* YHLabel_D_DetailLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92E71C31196B008F5602 /* YHLabel_D_DetailLabelCell.m */; };
+		F88F930D1C31196C008F5602 /* YHLabelArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92E91C31196B008F5602 /* YHLabelArrowRightCell.m */; };
+		F88F930E1C31196C008F5602 /* YHLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92EB1C31196B008F5602 /* YHLabelCell.m */; };
+		F88F930F1C31196C008F5602 /* YHLabelDetailLabelArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92ED1C31196B008F5602 /* YHLabelDetailLabelArrowRightCell.m */; };
+		F88F93101C31196C008F5602 /* YHLabelDetailLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92EF1C31196B008F5602 /* YHLabelDetailLabelCell.m */; };
+		F88F93111C31196C008F5602 /* YHLabelSingleBtnSingleBtnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92F11C31196B008F5602 /* YHLabelSingleBtnSingleBtnCell.m */; };
+		F88F93121C31196C008F5602 /* YHLabelTextFieldArrowRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92F31C31196B008F5602 /* YHLabelTextFieldArrowRightCell.m */; };
+		F88F93131C31196C008F5602 /* YHLabelTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92F51C31196C008F5602 /* YHLabelTextFieldCell.m */; };
+		F88F93141C31196C008F5602 /* YHLabelTextFieldIdcardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92F71C31196C008F5602 /* YHLabelTextFieldIdcardCell.m */; };
+		F88F93151C31196C008F5602 /* YHLabelTextFieldNumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92F91C31196C008F5602 /* YHLabelTextFieldNumCell.m */; };
+		F88F93161C31196C008F5602 /* YHLabelTextFieldPswCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F92FB1C31196C008F5602 /* YHLabelTextFieldPswCell.m */; };
+		F88F93191C3119B3008F5602 /* YHCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F93181C3119B3008F5602 /* YHCellModel.m */; };
+		F88F931C1C313C0F008F5602 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F931B1C313C0F008F5602 /* TestModel.m */; };
+		F88F931F1C322616008F5602 /* YHTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F931E1C322616008F5602 /* YHTableView.m */; };
+		F88F93221C3230FC008F5602 /* YHLabelDetailLabelCell0.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F93211C3230FC008F5602 /* YHLabelDetailLabelCell0.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6C682B8A9E283CC8C01087B2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		931A578D8F350F784634D9C8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F019EC5863FCE7CD84F342E3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F85F4C6C1C2EF1650050BD77 /* UITableViewCell+YHKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+YHKit.h"; sourceTree = "<group>"; };
-		F85F4C6D1C2EF1650050BD77 /* UITableViewCell+YHKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+YHKit.m"; sourceTree = "<group>"; };
-		F85F4C6F1C2EF18F0050BD77 /* YHCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHCell.h; sourceTree = "<group>"; };
-		F85F4C701C2EF18F0050BD77 /* YHCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHCell.m; sourceTree = "<group>"; };
-		F85F4C721C2EF4C50050BD77 /* YHLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelCell.h; sourceTree = "<group>"; };
-		F85F4C731C2EF4C50050BD77 /* YHLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelCell.m; sourceTree = "<group>"; };
-		F85F4C751C2EF4F00050BD77 /* YHImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageCell.h; sourceTree = "<group>"; };
-		F85F4C761C2EF4F00050BD77 /* YHImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageCell.m; sourceTree = "<group>"; };
-		F85F4C7B1C2EFDE20050BD77 /* YHCellDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHCellDefine.h; sourceTree = "<group>"; };
-		F85F4C7C1C2FC3460050BD77 /* YHLabelArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelArrowRightCell.h; sourceTree = "<group>"; };
-		F85F4C7D1C2FC3460050BD77 /* YHLabelArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelArrowRightCell.m; sourceTree = "<group>"; };
-		F85F4C7F1C2FC5D90050BD77 /* YHLabelDetailLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelDetailLabelCell.h; sourceTree = "<group>"; };
-		F85F4C801C2FC5D90050BD77 /* YHLabelDetailLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelDetailLabelCell.m; sourceTree = "<group>"; };
-		F85F4C821C2FC9BD0050BD77 /* YHLabelDetailLabelArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelDetailLabelArrowRightCell.h; sourceTree = "<group>"; };
-		F85F4C831C2FC9BD0050BD77 /* YHLabelDetailLabelArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelDetailLabelArrowRightCell.m; sourceTree = "<group>"; };
-		F85F4C851C2FCBB00050BD77 /* YHLabel_D_DetailLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabel_D_DetailLabelCell.h; sourceTree = "<group>"; };
-		F85F4C861C2FCBB00050BD77 /* YHLabel_D_DetailLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabel_D_DetailLabelCell.m; sourceTree = "<group>"; };
-		F85F4C881C2FD1430050BD77 /* YHLabel_D_DetailLabelArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabel_D_DetailLabelArrowRightCell.h; sourceTree = "<group>"; };
-		F85F4C891C2FD1430050BD77 /* YHLabel_D_DetailLabelArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabel_D_DetailLabelArrowRightCell.m; sourceTree = "<group>"; };
-		F85F4C8B1C2FD2EC0050BD77 /* YHLabelTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelTextFieldCell.h; sourceTree = "<group>"; };
-		F85F4C8C1C2FD2EC0050BD77 /* YHLabelTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelTextFieldCell.m; sourceTree = "<group>"; };
-		F85F4C8E1C2FDC160050BD77 /* YHLabelTextFieldNumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelTextFieldNumCell.h; sourceTree = "<group>"; };
-		F85F4C8F1C2FDC160050BD77 /* YHLabelTextFieldNumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelTextFieldNumCell.m; sourceTree = "<group>"; };
-		F85F4C911C2FDC640050BD77 /* YHLabelTextFieldIdcardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelTextFieldIdcardCell.h; sourceTree = "<group>"; };
-		F85F4C921C2FDC640050BD77 /* YHLabelTextFieldIdcardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelTextFieldIdcardCell.m; sourceTree = "<group>"; };
-		F85F4C941C2FDC9A0050BD77 /* YHLabelTextFieldPswCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelTextFieldPswCell.h; sourceTree = "<group>"; };
-		F85F4C951C2FDC9A0050BD77 /* YHLabelTextFieldPswCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelTextFieldPswCell.m; sourceTree = "<group>"; };
-		F85F4C971C2FDD760050BD77 /* YHLabelTextFieldArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelTextFieldArrowRightCell.h; sourceTree = "<group>"; };
-		F85F4C981C2FDD760050BD77 /* YHLabelTextFieldArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelTextFieldArrowRightCell.m; sourceTree = "<group>"; };
-		F85F4C9A1C2FE25C0050BD77 /* YHImageLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageLabelCell.h; sourceTree = "<group>"; };
-		F85F4C9B1C2FE25C0050BD77 /* YHImageLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageLabelCell.m; sourceTree = "<group>"; };
-		F85F4C9D1C2FE5B70050BD77 /* YHImageLabelArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageLabelArrowRightCell.h; sourceTree = "<group>"; };
-		F85F4C9E1C2FE5B70050BD77 /* YHImageLabelArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageLabelArrowRightCell.m; sourceTree = "<group>"; };
-		F85F4CA01C2FE7E80050BD77 /* YHImageLabelDetailLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageLabelDetailLabelCell.h; sourceTree = "<group>"; };
-		F85F4CA11C2FE7E80050BD77 /* YHImageLabelDetailLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageLabelDetailLabelCell.m; sourceTree = "<group>"; };
-		F85F4CA31C2FF0280050BD77 /* YHImageLabelDetailLabelArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageLabelDetailLabelArrowRightCell.h; sourceTree = "<group>"; };
-		F85F4CA41C2FF0280050BD77 /* YHImageLabelDetailLabelArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageLabelDetailLabelArrowRightCell.m; sourceTree = "<group>"; };
-		F85F4CA61C2FF1640050BD77 /* YHImageLabel_D_DetailLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageLabel_D_DetailLabelCell.h; sourceTree = "<group>"; };
-		F85F4CA71C2FF1640050BD77 /* YHImageLabel_D_DetailLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageLabel_D_DetailLabelCell.m; sourceTree = "<group>"; };
-		F85F4CA91C2FF26C0050BD77 /* YHImageLabel_D_DetailLabelArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageLabel_D_DetailLabelArrowRightCell.h; sourceTree = "<group>"; };
-		F85F4CAA1C2FF26C0050BD77 /* YHImageLabel_D_DetailLabelArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageLabel_D_DetailLabelArrowRightCell.m; sourceTree = "<group>"; };
-		F85F4CAC1C2FF37F0050BD77 /* YHImageTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageTextFieldCell.h; sourceTree = "<group>"; };
-		F85F4CAD1C2FF37F0050BD77 /* YHImageTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageTextFieldCell.m; sourceTree = "<group>"; };
-		F85F4CAF1C2FF4560050BD77 /* YHImageTextFieldNumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageTextFieldNumCell.h; sourceTree = "<group>"; };
-		F85F4CB01C2FF4560050BD77 /* YHImageTextFieldNumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageTextFieldNumCell.m; sourceTree = "<group>"; };
-		F85F4CB21C2FF4820050BD77 /* YHImageTextFieldIdcardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageTextFieldIdcardCell.h; sourceTree = "<group>"; };
-		F85F4CB31C2FF4820050BD77 /* YHImageTextFieldIdcardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageTextFieldIdcardCell.m; sourceTree = "<group>"; };
-		F85F4CB51C2FF4A40050BD77 /* YHImageTextFieldPswCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageTextFieldPswCell.h; sourceTree = "<group>"; };
-		F85F4CB61C2FF4A40050BD77 /* YHImageTextFieldPswCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageTextFieldPswCell.m; sourceTree = "<group>"; };
-		F85F4CB81C2FF4CF0050BD77 /* YHImageTextFieldArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageTextFieldArrowRightCell.h; sourceTree = "<group>"; };
-		F85F4CB91C2FF4CF0050BD77 /* YHImageTextFieldArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageTextFieldArrowRightCell.m; sourceTree = "<group>"; };
 		F85F4CBC1C2FF7070050BD77 /* singleBtnImage_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "singleBtnImage_normal@2x.png"; sourceTree = "<group>"; };
 		F85F4CBD1C2FF7070050BD77 /* singleBtnImage_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "singleBtnImage_normal@3x.png"; sourceTree = "<group>"; };
 		F85F4CBE1C2FF7070050BD77 /* singleBtnImage_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "singleBtnImage_selected@2x.png"; sourceTree = "<group>"; };
 		F85F4CBF1C2FF7070050BD77 /* singleBtnImage_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "singleBtnImage_selected@3x.png"; sourceTree = "<group>"; };
-		F85F4CC41C2FF74F0050BD77 /* YHLabelSingleBtnSingleBtnCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelSingleBtnSingleBtnCell.h; sourceTree = "<group>"; };
-		F85F4CC51C2FF74F0050BD77 /* YHLabelSingleBtnSingleBtnCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelSingleBtnSingleBtnCell.m; sourceTree = "<group>"; };
-		F85F4CC71C30043F0050BD77 /* YHImageSingleBtnSingleBtnCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageSingleBtnSingleBtnCell.h; sourceTree = "<group>"; };
-		F85F4CC81C30043F0050BD77 /* YHImageSingleBtnSingleBtnCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageSingleBtnSingleBtnCell.m; sourceTree = "<group>"; };
 		F884A0231C2AD52B000A9F18 /* TestSp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F884A0271C2AD52B000A9F18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F884A0291C2AD52B000A9F18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -120,6 +69,69 @@
 		F884A0321C2AD52B000A9F18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F884A0351C2AD52B000A9F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F884A0371C2AD52B000A9F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F88F92C41C31196B008F5602 /* UITableViewCell+YHKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+YHKit.h"; sourceTree = "<group>"; };
+		F88F92C51C31196B008F5602 /* UITableViewCell+YHKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+YHKit.m"; sourceTree = "<group>"; };
+		F88F92C61C31196B008F5602 /* YHCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHCell.h; sourceTree = "<group>"; };
+		F88F92C71C31196B008F5602 /* YHCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHCell.m; sourceTree = "<group>"; };
+		F88F92C81C31196B008F5602 /* YHCellDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHCellDefine.h; sourceTree = "<group>"; };
+		F88F92CA1C31196B008F5602 /* YHImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageCell.h; sourceTree = "<group>"; };
+		F88F92CB1C31196B008F5602 /* YHImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageCell.m; sourceTree = "<group>"; };
+		F88F92CC1C31196B008F5602 /* YHImageLabel_D_DetailLabelArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageLabel_D_DetailLabelArrowRightCell.h; sourceTree = "<group>"; };
+		F88F92CD1C31196B008F5602 /* YHImageLabel_D_DetailLabelArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageLabel_D_DetailLabelArrowRightCell.m; sourceTree = "<group>"; };
+		F88F92CE1C31196B008F5602 /* YHImageLabel_D_DetailLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageLabel_D_DetailLabelCell.h; sourceTree = "<group>"; };
+		F88F92CF1C31196B008F5602 /* YHImageLabel_D_DetailLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageLabel_D_DetailLabelCell.m; sourceTree = "<group>"; };
+		F88F92D01C31196B008F5602 /* YHImageLabelArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageLabelArrowRightCell.h; sourceTree = "<group>"; };
+		F88F92D11C31196B008F5602 /* YHImageLabelArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageLabelArrowRightCell.m; sourceTree = "<group>"; };
+		F88F92D21C31196B008F5602 /* YHImageLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageLabelCell.h; sourceTree = "<group>"; };
+		F88F92D31C31196B008F5602 /* YHImageLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageLabelCell.m; sourceTree = "<group>"; };
+		F88F92D41C31196B008F5602 /* YHImageLabelDetailLabelArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageLabelDetailLabelArrowRightCell.h; sourceTree = "<group>"; };
+		F88F92D51C31196B008F5602 /* YHImageLabelDetailLabelArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageLabelDetailLabelArrowRightCell.m; sourceTree = "<group>"; };
+		F88F92D61C31196B008F5602 /* YHImageLabelDetailLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageLabelDetailLabelCell.h; sourceTree = "<group>"; };
+		F88F92D71C31196B008F5602 /* YHImageLabelDetailLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageLabelDetailLabelCell.m; sourceTree = "<group>"; };
+		F88F92D81C31196B008F5602 /* YHImageSingleBtnSingleBtnCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageSingleBtnSingleBtnCell.h; sourceTree = "<group>"; };
+		F88F92D91C31196B008F5602 /* YHImageSingleBtnSingleBtnCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageSingleBtnSingleBtnCell.m; sourceTree = "<group>"; };
+		F88F92DA1C31196B008F5602 /* YHImageTextFieldArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageTextFieldArrowRightCell.h; sourceTree = "<group>"; };
+		F88F92DB1C31196B008F5602 /* YHImageTextFieldArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageTextFieldArrowRightCell.m; sourceTree = "<group>"; };
+		F88F92DC1C31196B008F5602 /* YHImageTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageTextFieldCell.h; sourceTree = "<group>"; };
+		F88F92DD1C31196B008F5602 /* YHImageTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageTextFieldCell.m; sourceTree = "<group>"; };
+		F88F92DE1C31196B008F5602 /* YHImageTextFieldIdcardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageTextFieldIdcardCell.h; sourceTree = "<group>"; };
+		F88F92DF1C31196B008F5602 /* YHImageTextFieldIdcardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageTextFieldIdcardCell.m; sourceTree = "<group>"; };
+		F88F92E01C31196B008F5602 /* YHImageTextFieldNumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageTextFieldNumCell.h; sourceTree = "<group>"; };
+		F88F92E11C31196B008F5602 /* YHImageTextFieldNumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageTextFieldNumCell.m; sourceTree = "<group>"; };
+		F88F92E21C31196B008F5602 /* YHImageTextFieldPswCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageTextFieldPswCell.h; sourceTree = "<group>"; };
+		F88F92E31C31196B008F5602 /* YHImageTextFieldPswCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageTextFieldPswCell.m; sourceTree = "<group>"; };
+		F88F92E41C31196B008F5602 /* YHLabel_D_DetailLabelArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabel_D_DetailLabelArrowRightCell.h; sourceTree = "<group>"; };
+		F88F92E51C31196B008F5602 /* YHLabel_D_DetailLabelArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabel_D_DetailLabelArrowRightCell.m; sourceTree = "<group>"; };
+		F88F92E61C31196B008F5602 /* YHLabel_D_DetailLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabel_D_DetailLabelCell.h; sourceTree = "<group>"; };
+		F88F92E71C31196B008F5602 /* YHLabel_D_DetailLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabel_D_DetailLabelCell.m; sourceTree = "<group>"; };
+		F88F92E81C31196B008F5602 /* YHLabelArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelArrowRightCell.h; sourceTree = "<group>"; };
+		F88F92E91C31196B008F5602 /* YHLabelArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelArrowRightCell.m; sourceTree = "<group>"; };
+		F88F92EA1C31196B008F5602 /* YHLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelCell.h; sourceTree = "<group>"; };
+		F88F92EB1C31196B008F5602 /* YHLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelCell.m; sourceTree = "<group>"; };
+		F88F92EC1C31196B008F5602 /* YHLabelDetailLabelArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelDetailLabelArrowRightCell.h; sourceTree = "<group>"; };
+		F88F92ED1C31196B008F5602 /* YHLabelDetailLabelArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelDetailLabelArrowRightCell.m; sourceTree = "<group>"; };
+		F88F92EE1C31196B008F5602 /* YHLabelDetailLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelDetailLabelCell.h; sourceTree = "<group>"; };
+		F88F92EF1C31196B008F5602 /* YHLabelDetailLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelDetailLabelCell.m; sourceTree = "<group>"; };
+		F88F92F01C31196B008F5602 /* YHLabelSingleBtnSingleBtnCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelSingleBtnSingleBtnCell.h; sourceTree = "<group>"; };
+		F88F92F11C31196B008F5602 /* YHLabelSingleBtnSingleBtnCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelSingleBtnSingleBtnCell.m; sourceTree = "<group>"; };
+		F88F92F21C31196B008F5602 /* YHLabelTextFieldArrowRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelTextFieldArrowRightCell.h; sourceTree = "<group>"; };
+		F88F92F31C31196B008F5602 /* YHLabelTextFieldArrowRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelTextFieldArrowRightCell.m; sourceTree = "<group>"; };
+		F88F92F41C31196B008F5602 /* YHLabelTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelTextFieldCell.h; sourceTree = "<group>"; };
+		F88F92F51C31196C008F5602 /* YHLabelTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelTextFieldCell.m; sourceTree = "<group>"; };
+		F88F92F61C31196C008F5602 /* YHLabelTextFieldIdcardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelTextFieldIdcardCell.h; sourceTree = "<group>"; };
+		F88F92F71C31196C008F5602 /* YHLabelTextFieldIdcardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelTextFieldIdcardCell.m; sourceTree = "<group>"; };
+		F88F92F81C31196C008F5602 /* YHLabelTextFieldNumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelTextFieldNumCell.h; sourceTree = "<group>"; };
+		F88F92F91C31196C008F5602 /* YHLabelTextFieldNumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelTextFieldNumCell.m; sourceTree = "<group>"; };
+		F88F92FA1C31196C008F5602 /* YHLabelTextFieldPswCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelTextFieldPswCell.h; sourceTree = "<group>"; };
+		F88F92FB1C31196C008F5602 /* YHLabelTextFieldPswCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelTextFieldPswCell.m; sourceTree = "<group>"; };
+		F88F93171C3119B3008F5602 /* YHCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHCellModel.h; sourceTree = "<group>"; };
+		F88F93181C3119B3008F5602 /* YHCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHCellModel.m; sourceTree = "<group>"; };
+		F88F931A1C313C0F008F5602 /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		F88F931B1C313C0F008F5602 /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		F88F931D1C322616008F5602 /* YHTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTableView.h; sourceTree = "<group>"; };
+		F88F931E1C322616008F5602 /* YHTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTableView.m; sourceTree = "<group>"; };
+		F88F93201C3230FC008F5602 /* YHLabelDetailLabelCell0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLabelDetailLabelCell0.h; sourceTree = "<group>"; };
+		F88F93211C3230FC008F5602 /* YHLabelDetailLabelCell0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLabelDetailLabelCell0.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,61 +166,8 @@
 		F85F4C6B1C2EF1650050BD77 /* YHCell */ = {
 			isa = PBXGroup;
 			children = (
-				F85F4C6C1C2EF1650050BD77 /* UITableViewCell+YHKit.h */,
-				F85F4C6D1C2EF1650050BD77 /* UITableViewCell+YHKit.m */,
-				F85F4C7B1C2EFDE20050BD77 /* YHCellDefine.h */,
-				F85F4C6F1C2EF18F0050BD77 /* YHCell.h */,
-				F85F4C701C2EF18F0050BD77 /* YHCell.m */,
-				F85F4C721C2EF4C50050BD77 /* YHLabelCell.h */,
-				F85F4C731C2EF4C50050BD77 /* YHLabelCell.m */,
-				F85F4C7C1C2FC3460050BD77 /* YHLabelArrowRightCell.h */,
-				F85F4C7D1C2FC3460050BD77 /* YHLabelArrowRightCell.m */,
-				F85F4C7F1C2FC5D90050BD77 /* YHLabelDetailLabelCell.h */,
-				F85F4C801C2FC5D90050BD77 /* YHLabelDetailLabelCell.m */,
-				F85F4C821C2FC9BD0050BD77 /* YHLabelDetailLabelArrowRightCell.h */,
-				F85F4C831C2FC9BD0050BD77 /* YHLabelDetailLabelArrowRightCell.m */,
-				F85F4C851C2FCBB00050BD77 /* YHLabel_D_DetailLabelCell.h */,
-				F85F4C861C2FCBB00050BD77 /* YHLabel_D_DetailLabelCell.m */,
-				F85F4C881C2FD1430050BD77 /* YHLabel_D_DetailLabelArrowRightCell.h */,
-				F85F4C891C2FD1430050BD77 /* YHLabel_D_DetailLabelArrowRightCell.m */,
-				F85F4C8B1C2FD2EC0050BD77 /* YHLabelTextFieldCell.h */,
-				F85F4C8C1C2FD2EC0050BD77 /* YHLabelTextFieldCell.m */,
-				F85F4C8E1C2FDC160050BD77 /* YHLabelTextFieldNumCell.h */,
-				F85F4C8F1C2FDC160050BD77 /* YHLabelTextFieldNumCell.m */,
-				F85F4C911C2FDC640050BD77 /* YHLabelTextFieldIdcardCell.h */,
-				F85F4C921C2FDC640050BD77 /* YHLabelTextFieldIdcardCell.m */,
-				F85F4C941C2FDC9A0050BD77 /* YHLabelTextFieldPswCell.h */,
-				F85F4C951C2FDC9A0050BD77 /* YHLabelTextFieldPswCell.m */,
-				F85F4C971C2FDD760050BD77 /* YHLabelTextFieldArrowRightCell.h */,
-				F85F4C981C2FDD760050BD77 /* YHLabelTextFieldArrowRightCell.m */,
-				F85F4CC41C2FF74F0050BD77 /* YHLabelSingleBtnSingleBtnCell.h */,
-				F85F4CC51C2FF74F0050BD77 /* YHLabelSingleBtnSingleBtnCell.m */,
-				F85F4C751C2EF4F00050BD77 /* YHImageCell.h */,
-				F85F4C761C2EF4F00050BD77 /* YHImageCell.m */,
-				F85F4C9A1C2FE25C0050BD77 /* YHImageLabelCell.h */,
-				F85F4C9B1C2FE25C0050BD77 /* YHImageLabelCell.m */,
-				F85F4C9D1C2FE5B70050BD77 /* YHImageLabelArrowRightCell.h */,
-				F85F4C9E1C2FE5B70050BD77 /* YHImageLabelArrowRightCell.m */,
-				F85F4CA01C2FE7E80050BD77 /* YHImageLabelDetailLabelCell.h */,
-				F85F4CA11C2FE7E80050BD77 /* YHImageLabelDetailLabelCell.m */,
-				F85F4CA31C2FF0280050BD77 /* YHImageLabelDetailLabelArrowRightCell.h */,
-				F85F4CA41C2FF0280050BD77 /* YHImageLabelDetailLabelArrowRightCell.m */,
-				F85F4CA61C2FF1640050BD77 /* YHImageLabel_D_DetailLabelCell.h */,
-				F85F4CA71C2FF1640050BD77 /* YHImageLabel_D_DetailLabelCell.m */,
-				F85F4CA91C2FF26C0050BD77 /* YHImageLabel_D_DetailLabelArrowRightCell.h */,
-				F85F4CAA1C2FF26C0050BD77 /* YHImageLabel_D_DetailLabelArrowRightCell.m */,
-				F85F4CAC1C2FF37F0050BD77 /* YHImageTextFieldCell.h */,
-				F85F4CAD1C2FF37F0050BD77 /* YHImageTextFieldCell.m */,
-				F85F4CAF1C2FF4560050BD77 /* YHImageTextFieldNumCell.h */,
-				F85F4CB01C2FF4560050BD77 /* YHImageTextFieldNumCell.m */,
-				F85F4CB21C2FF4820050BD77 /* YHImageTextFieldIdcardCell.h */,
-				F85F4CB31C2FF4820050BD77 /* YHImageTextFieldIdcardCell.m */,
-				F85F4CB51C2FF4A40050BD77 /* YHImageTextFieldPswCell.h */,
-				F85F4CB61C2FF4A40050BD77 /* YHImageTextFieldPswCell.m */,
-				F85F4CB81C2FF4CF0050BD77 /* YHImageTextFieldArrowRightCell.h */,
-				F85F4CB91C2FF4CF0050BD77 /* YHImageTextFieldArrowRightCell.m */,
-				F85F4CC71C30043F0050BD77 /* YHImageSingleBtnSingleBtnCell.h */,
-				F85F4CC81C30043F0050BD77 /* YHImageSingleBtnSingleBtnCell.m */,
+				F88F92C31C31196B008F5602 /* Base */,
+				F88F92C91C31196B008F5602 /* Cells */,
 				F85F4CBB1C2FF7070050BD77 /* Resource */,
 			);
 			path = YHCell;
@@ -251,11 +210,15 @@
 				F884A02A1C2AD52B000A9F18 /* AppDelegate.m */,
 				F884A02C1C2AD52B000A9F18 /* ViewController.h */,
 				F884A02D1C2AD52B000A9F18 /* ViewController.m */,
+				F88F931A1C313C0F008F5602 /* TestModel.h */,
+				F88F931B1C313C0F008F5602 /* TestModel.m */,
 				F884A02F1C2AD52B000A9F18 /* Main.storyboard */,
 				F884A0321C2AD52B000A9F18 /* Assets.xcassets */,
 				F884A0341C2AD52B000A9F18 /* LaunchScreen.storyboard */,
 				F884A0371C2AD52B000A9F18 /* Info.plist */,
 				F884A0261C2AD52B000A9F18 /* Supporting Files */,
+				F88F931D1C322616008F5602 /* YHTableView.h */,
+				F88F931E1C322616008F5602 /* YHTableView.m */,
 			);
 			path = TestSp;
 			sourceTree = "<group>";
@@ -266,6 +229,79 @@
 				F884A0271C2AD52B000A9F18 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F88F92C31C31196B008F5602 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F88F92C41C31196B008F5602 /* UITableViewCell+YHKit.h */,
+				F88F92C51C31196B008F5602 /* UITableViewCell+YHKit.m */,
+				F88F92C61C31196B008F5602 /* YHCell.h */,
+				F88F92C71C31196B008F5602 /* YHCell.m */,
+				F88F92C81C31196B008F5602 /* YHCellDefine.h */,
+				F88F93171C3119B3008F5602 /* YHCellModel.h */,
+				F88F93181C3119B3008F5602 /* YHCellModel.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F88F92C91C31196B008F5602 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F88F92EA1C31196B008F5602 /* YHLabelCell.h */,
+				F88F92EB1C31196B008F5602 /* YHLabelCell.m */,
+				F88F92E81C31196B008F5602 /* YHLabelArrowRightCell.h */,
+				F88F92E91C31196B008F5602 /* YHLabelArrowRightCell.m */,
+				F88F92EE1C31196B008F5602 /* YHLabelDetailLabelCell.h */,
+				F88F92EF1C31196B008F5602 /* YHLabelDetailLabelCell.m */,
+				F88F93201C3230FC008F5602 /* YHLabelDetailLabelCell0.h */,
+				F88F93211C3230FC008F5602 /* YHLabelDetailLabelCell0.m */,
+				F88F92EC1C31196B008F5602 /* YHLabelDetailLabelArrowRightCell.h */,
+				F88F92ED1C31196B008F5602 /* YHLabelDetailLabelArrowRightCell.m */,
+				F88F92E61C31196B008F5602 /* YHLabel_D_DetailLabelCell.h */,
+				F88F92E71C31196B008F5602 /* YHLabel_D_DetailLabelCell.m */,
+				F88F92E41C31196B008F5602 /* YHLabel_D_DetailLabelArrowRightCell.h */,
+				F88F92E51C31196B008F5602 /* YHLabel_D_DetailLabelArrowRightCell.m */,
+				F88F92F41C31196B008F5602 /* YHLabelTextFieldCell.h */,
+				F88F92F51C31196C008F5602 /* YHLabelTextFieldCell.m */,
+				F88F92F61C31196C008F5602 /* YHLabelTextFieldIdcardCell.h */,
+				F88F92F71C31196C008F5602 /* YHLabelTextFieldIdcardCell.m */,
+				F88F92F81C31196C008F5602 /* YHLabelTextFieldNumCell.h */,
+				F88F92F91C31196C008F5602 /* YHLabelTextFieldNumCell.m */,
+				F88F92FA1C31196C008F5602 /* YHLabelTextFieldPswCell.h */,
+				F88F92FB1C31196C008F5602 /* YHLabelTextFieldPswCell.m */,
+				F88F92F21C31196B008F5602 /* YHLabelTextFieldArrowRightCell.h */,
+				F88F92F31C31196B008F5602 /* YHLabelTextFieldArrowRightCell.m */,
+				F88F92F01C31196B008F5602 /* YHLabelSingleBtnSingleBtnCell.h */,
+				F88F92F11C31196B008F5602 /* YHLabelSingleBtnSingleBtnCell.m */,
+				F88F92CA1C31196B008F5602 /* YHImageCell.h */,
+				F88F92CB1C31196B008F5602 /* YHImageCell.m */,
+				F88F92D21C31196B008F5602 /* YHImageLabelCell.h */,
+				F88F92D31C31196B008F5602 /* YHImageLabelCell.m */,
+				F88F92D01C31196B008F5602 /* YHImageLabelArrowRightCell.h */,
+				F88F92D11C31196B008F5602 /* YHImageLabelArrowRightCell.m */,
+				F88F92D61C31196B008F5602 /* YHImageLabelDetailLabelCell.h */,
+				F88F92D71C31196B008F5602 /* YHImageLabelDetailLabelCell.m */,
+				F88F92D41C31196B008F5602 /* YHImageLabelDetailLabelArrowRightCell.h */,
+				F88F92D51C31196B008F5602 /* YHImageLabelDetailLabelArrowRightCell.m */,
+				F88F92CE1C31196B008F5602 /* YHImageLabel_D_DetailLabelCell.h */,
+				F88F92CF1C31196B008F5602 /* YHImageLabel_D_DetailLabelCell.m */,
+				F88F92CC1C31196B008F5602 /* YHImageLabel_D_DetailLabelArrowRightCell.h */,
+				F88F92CD1C31196B008F5602 /* YHImageLabel_D_DetailLabelArrowRightCell.m */,
+				F88F92DC1C31196B008F5602 /* YHImageTextFieldCell.h */,
+				F88F92DD1C31196B008F5602 /* YHImageTextFieldCell.m */,
+				F88F92DE1C31196B008F5602 /* YHImageTextFieldIdcardCell.h */,
+				F88F92DF1C31196B008F5602 /* YHImageTextFieldIdcardCell.m */,
+				F88F92E01C31196B008F5602 /* YHImageTextFieldNumCell.h */,
+				F88F92E11C31196B008F5602 /* YHImageTextFieldNumCell.m */,
+				F88F92E21C31196B008F5602 /* YHImageTextFieldPswCell.h */,
+				F88F92E31C31196B008F5602 /* YHImageTextFieldPswCell.m */,
+				F88F92DA1C31196B008F5602 /* YHImageTextFieldArrowRightCell.h */,
+				F88F92DB1C31196B008F5602 /* YHImageTextFieldArrowRightCell.m */,
+				F88F92D81C31196B008F5602 /* YHImageSingleBtnSingleBtnCell.h */,
+				F88F92D91C31196B008F5602 /* YHImageSingleBtnSingleBtnCell.m */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,36 +430,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F85F4C871C2FCBB00050BD77 /* YHLabel_D_DetailLabelCell.m in Sources */,
-				F85F4CBA1C2FF4CF0050BD77 /* YHImageTextFieldArrowRightCell.m in Sources */,
-				F85F4C8D1C2FD2EC0050BD77 /* YHLabelTextFieldCell.m in Sources */,
-				F85F4C9C1C2FE25C0050BD77 /* YHImageLabelCell.m in Sources */,
+				F88F93001C31196C008F5602 /* YHImageLabel_D_DetailLabelCell.m in Sources */,
+				F88F93021C31196C008F5602 /* YHImageLabelCell.m in Sources */,
+				F88F931F1C322616008F5602 /* YHTableView.m in Sources */,
+				F88F930F1C31196C008F5602 /* YHLabelDetailLabelArrowRightCell.m in Sources */,
+				F88F93221C3230FC008F5602 /* YHLabelDetailLabelCell0.m in Sources */,
+				F88F93151C31196C008F5602 /* YHLabelTextFieldNumCell.m in Sources */,
+				F88F93051C31196C008F5602 /* YHImageSingleBtnSingleBtnCell.m in Sources */,
 				F884A02E1C2AD52B000A9F18 /* ViewController.m in Sources */,
-				F85F4CA51C2FF0280050BD77 /* YHImageLabelDetailLabelArrowRightCell.m in Sources */,
+				F88F930C1C31196C008F5602 /* YHLabel_D_DetailLabelCell.m in Sources */,
+				F88F93041C31196C008F5602 /* YHImageLabelDetailLabelCell.m in Sources */,
+				F88F93091C31196C008F5602 /* YHImageTextFieldNumCell.m in Sources */,
 				F884A02B1C2AD52B000A9F18 /* AppDelegate.m in Sources */,
-				F85F4C961C2FDC9A0050BD77 /* YHLabelTextFieldPswCell.m in Sources */,
-				F85F4C8A1C2FD1430050BD77 /* YHLabel_D_DetailLabelArrowRightCell.m in Sources */,
-				F85F4C901C2FDC160050BD77 /* YHLabelTextFieldNumCell.m in Sources */,
+				F88F93031C31196C008F5602 /* YHImageLabelDetailLabelArrowRightCell.m in Sources */,
+				F88F93071C31196C008F5602 /* YHImageTextFieldCell.m in Sources */,
 				F884A0281C2AD52B000A9F18 /* main.m in Sources */,
-				F85F4C811C2FC5D90050BD77 /* YHLabelDetailLabelCell.m in Sources */,
-				F85F4C931C2FDC640050BD77 /* YHLabelTextFieldIdcardCell.m in Sources */,
-				F85F4C711C2EF18F0050BD77 /* YHCell.m in Sources */,
-				F85F4CA21C2FE7E80050BD77 /* YHImageLabelDetailLabelCell.m in Sources */,
-				F85F4CB41C2FF4820050BD77 /* YHImageTextFieldIdcardCell.m in Sources */,
-				F85F4CB71C2FF4A40050BD77 /* YHImageTextFieldPswCell.m in Sources */,
-				F85F4C771C2EF4F00050BD77 /* YHImageCell.m in Sources */,
-				F85F4C991C2FDD760050BD77 /* YHLabelTextFieldArrowRightCell.m in Sources */,
-				F85F4C7E1C2FC3460050BD77 /* YHLabelArrowRightCell.m in Sources */,
-				F85F4C6E1C2EF1650050BD77 /* UITableViewCell+YHKit.m in Sources */,
-				F85F4CC91C30043F0050BD77 /* YHImageSingleBtnSingleBtnCell.m in Sources */,
-				F85F4CC61C2FF74F0050BD77 /* YHLabelSingleBtnSingleBtnCell.m in Sources */,
-				F85F4C9F1C2FE5B70050BD77 /* YHImageLabelArrowRightCell.m in Sources */,
-				F85F4CB11C2FF4560050BD77 /* YHImageTextFieldNumCell.m in Sources */,
-				F85F4CA81C2FF1640050BD77 /* YHImageLabel_D_DetailLabelCell.m in Sources */,
-				F85F4C741C2EF4C50050BD77 /* YHLabelCell.m in Sources */,
-				F85F4CAE1C2FF37F0050BD77 /* YHImageTextFieldCell.m in Sources */,
-				F85F4C841C2FC9BD0050BD77 /* YHLabelDetailLabelArrowRightCell.m in Sources */,
-				F85F4CAB1C2FF26C0050BD77 /* YHImageLabel_D_DetailLabelArrowRightCell.m in Sources */,
+				F88F93141C31196C008F5602 /* YHLabelTextFieldIdcardCell.m in Sources */,
+				F88F93161C31196C008F5602 /* YHLabelTextFieldPswCell.m in Sources */,
+				F88F93131C31196C008F5602 /* YHLabelTextFieldCell.m in Sources */,
+				F88F930E1C31196C008F5602 /* YHLabelCell.m in Sources */,
+				F88F93191C3119B3008F5602 /* YHCellModel.m in Sources */,
+				F88F930D1C31196C008F5602 /* YHLabelArrowRightCell.m in Sources */,
+				F88F92FD1C31196C008F5602 /* YHCell.m in Sources */,
+				F88F92FE1C31196C008F5602 /* YHImageCell.m in Sources */,
+				F88F93121C31196C008F5602 /* YHLabelTextFieldArrowRightCell.m in Sources */,
+				F88F93081C31196C008F5602 /* YHImageTextFieldIdcardCell.m in Sources */,
+				F88F931C1C313C0F008F5602 /* TestModel.m in Sources */,
+				F88F930A1C31196C008F5602 /* YHImageTextFieldPswCell.m in Sources */,
+				F88F930B1C31196C008F5602 /* YHLabel_D_DetailLabelArrowRightCell.m in Sources */,
+				F88F93061C31196C008F5602 /* YHImageTextFieldArrowRightCell.m in Sources */,
+				F88F92FF1C31196C008F5602 /* YHImageLabel_D_DetailLabelArrowRightCell.m in Sources */,
+				F88F93111C31196C008F5602 /* YHLabelSingleBtnSingleBtnCell.m in Sources */,
+				F88F92FC1C31196C008F5602 /* UITableViewCell+YHKit.m in Sources */,
+				F88F93011C31196C008F5602 /* YHImageLabelArrowRightCell.m in Sources */,
+				F88F93101C31196C008F5602 /* YHLabelDetailLabelCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

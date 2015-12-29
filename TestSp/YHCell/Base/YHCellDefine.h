@@ -28,6 +28,9 @@
 #define cellDetailLabFontSize           12
 #define cellDetailLabTextColor          [UIColor colorWithRed:100.0 / 255.0 green:100.0 / 255.0 blue:100.0 / 255.0 alpha:1]
 
+#define cellDetailLab0FontSize           14
+#define cellDetailLab0TextColor          [UIColor colorWithRed:50.0 / 255.0 green:50.0 / 255.0 blue:50.0 / 255.0 alpha:1]
+
 #define cellTxfFontSize                 14
 #define cellTxfTextColor                [UIColor colorWithRed:10.0 / 255.0 green:10.0 / 255.0 blue:10.0 / 255.0 alpha:1]
 

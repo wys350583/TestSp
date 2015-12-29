@@ -8,7 +8,7 @@
 
 #import "YHLabelTextFieldCell.h"
 
-@interface YHLabelTextFieldCell()
+@interface YHLabelTextFieldCell()<UITextFieldDelegate>
 
 @end
 
@@ -29,8 +29,8 @@
     self.selectionStyle = UITableViewCellSelectionStyleNone;
     
     [self.lab mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.equalTo(self.contentView);
         make.left.equalTo(self.contentView).offset(cellLeftOffset);
-        make.centerY.equalTo(self.contentView);
         make.width.equalTo(@cellLabWidth);
     }];
     self.lab.numberOfLines = 2;
@@ -48,9 +48,31 @@
         txf.textAlignment = NSTextAlignmentRight;
         txf.clearButtonMode = UITextFieldViewModeWhileEditing;
         txf.keyboardType = UIKeyboardTypeDefault;
-        txf.placeholder = @"先生，请问您需要贷款吗？";
+        txf.delegate = self;
         txf;
     });
+}
+
+- (void)setDisPlayData:(YHCellModel *)model {
+    [super setDisPlayData:model];
+    self.txf.placeholder = model.txfPlaceHolder ? model.txfPlaceHolder : @"";
+}
+
+- (void)setReqData:(id)reqModel {
+    [super setReqData:reqModel];
+    if (self.disPlayModel.keyString) {
+        self.txf.text = [reqModel valueForKey:self.disPlayModel.keyString];
+    }
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    [self.reqModel setValue:textField.text forKey:self.disPlayModel.keyString];
+    return YES;
+}
+
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField {
+    [self.reqModel setValue:textField.text forKey:self.disPlayModel.keyString];
+    return YES;
 }
 
 @end

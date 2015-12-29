@@ -40,13 +40,12 @@
             make.width.equalTo(@(cellSingleBtnWidth));
         }];
         singleBtn1.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
-        [singleBtn1 setImage:[UIImage imageNamed:cellSingleBtnImageNormal] forState:UIControlStateNormal];
-        [singleBtn1 setImage:[UIImage imageNamed:cellSingleBtnImageSelected] forState:UIControlStateSelected];
+        [singleBtn1 setImage:[UIImage imageNamed:self.disPlayModel.singleBtnImageNameNormal ? self.disPlayModel.singleBtnImageNameNormal : cellSingleBtnImageNormal] forState:UIControlStateNormal];
+        [singleBtn1 setImage:[UIImage imageNamed:self.disPlayModel.singleBtnImageNameSelected ? self.disPlayModel.singleBtnImageNameSelected : cellSingleBtnImageSelected] forState:UIControlStateSelected];
         singleBtn1.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 8);
         singleBtn1.titleLabel.font = [UIFont systemFontOfSize:cellSingleBtnTitleFontSize];
         [singleBtn1 setTitleColor:cellSingleBtnTitleColorNormal forState:UIControlStateNormal];
         [singleBtn1 setTitleColor:cellSingleBtnTitleColorSelected forState:UIControlStateSelected];
-        [singleBtn1 setTitle:@"贷款1" forState:UIControlStateNormal];
         [singleBtn1 addTarget:self action:@selector(singleBtn1Act) forControlEvents:UIControlEventTouchUpInside];
         
         singleBtn1;
@@ -61,18 +60,35 @@
             make.width.equalTo(@(cellSingleBtnWidth));
         }];
         singleBtn0.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
-        [singleBtn0 setImage:[UIImage imageNamed:cellSingleBtnImageNormal] forState:UIControlStateNormal];
-        [singleBtn0 setImage:[UIImage imageNamed:cellSingleBtnImageSelected] forState:UIControlStateSelected];
+        [singleBtn0 setImage:[UIImage imageNamed:self.disPlayModel.singleBtnImageNameNormal ? self.disPlayModel.singleBtnImageNameNormal : cellSingleBtnImageNormal] forState:UIControlStateNormal];
+        [singleBtn0 setImage:[UIImage imageNamed:self.disPlayModel.singleBtnImageNameSelected ? self.disPlayModel.singleBtnImageNameSelected : cellSingleBtnImageSelected] forState:UIControlStateSelected];
         singleBtn0.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 8);
         singleBtn0.titleLabel.font = [UIFont systemFontOfSize:cellSingleBtnTitleFontSize];
         [singleBtn0 setTitleColor:cellSingleBtnTitleColorNormal forState:UIControlStateNormal];
         [singleBtn0 setTitleColor:cellSingleBtnTitleColorSelected forState:UIControlStateSelected];
-        [singleBtn0 setTitle:@"贷款0" forState:UIControlStateNormal];
         [singleBtn0 addTarget:self action:@selector(singleBtn0Act) forControlEvents:UIControlEventTouchUpInside];
 
         singleBtn0;
     });
     
+}
+
+- (void)setDisPlayData:(YHCellModel *)model {
+    [super setDisPlayData:model];
+    [self.singleBtn0 setTitle:model.singleBtn0Title ? model.singleBtn0Title : @"" forState:UIControlStateNormal];
+    [self.singleBtn1 setTitle:model.singleBtn1Title ? model.singleBtn1Title : @"" forState:UIControlStateNormal];
+}
+
+- (void)setReqData:(id)reqModel {
+    [super setReqData:reqModel];
+    if (self.disPlayModel.keyString) {
+        if ([[self.reqModel valueForKey:self.disPlayModel.keyString] integerValue] == 0) {
+            self.singleBtn0.selected = YES;
+        }
+        else {
+            self.singleBtn1.selected = YES;
+        }
+    }
 }
 
 - (void)singleBtn0Act {
