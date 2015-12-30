@@ -71,4 +71,6 @@ typedef NS_ENUM(NSInteger, NRDCellType) {
 
 @property (nonatomic, strong)NSString *keyString;
 
+- (instancetype)initWithCellType:(NRDCellType)type;
+
 @end

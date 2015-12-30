@@ -10,6 +10,13 @@
 
 @implementation NRDCellModel
 
-
+- (instancetype)initWithCellType:(NRDCellType)type
+{
+    self = [super init];
+    if (self) {
+        self.cellType = type;
+    }
+    return self;
+}
 
 @end
