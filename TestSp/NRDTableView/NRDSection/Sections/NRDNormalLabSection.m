@@ -10,4 +10,29 @@
 
 @implementation NRDNormalLabSection
 
+- (void)setUI {
+    [super setUI];
+    
+    self.lab = ({
+        UILabel *lab = [[UILabel alloc] init];
+        [self addSubview:lab];
+        [lab mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self).offset(sectionLeftOffset);
+            make.centerY.equalTo(self);
+            make.right.equalTo(self).offset(sectionRightOffset);
+        }];
+        lab.font = [UIFont systemFontOfSize:sectionLabFontSize];
+        lab.textColor = sectionLabTextColor;
+        lab.adjustsFontSizeToFitWidth = YES;
+        lab.minimumScaleFactor = 0.7;
+        lab;
+    });
+
+}
+
+- (void)setDisplayData:(NRDSectionModel *)model {
+    [super setDisplayData:model];
+    self.lab.text = model.labText ? model.labText : @"";
+}
+
 @end

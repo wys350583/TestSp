@@ -10,4 +10,6 @@
 
 @interface NRDHorzLineLabSection : NRDHorzLineSection
 
+@property (nonatomic, strong) UILabel *lab;
+
 @end

@@ -21,10 +21,15 @@
 - (id)sectionInit:(NRDSectionModel *)model {
     Class setionClass = NSClassFromString([[self class] sectionString:model]);
     id section = [[setionClass alloc] init];
-    if ([section respondsToSelector:@selector(setDisPlayData:)]) {
-        [section performSelector:@selector(setDisPlayData:) withObject:model];
+    if ([section respondsToSelector:@selector(setDisplayData:)]) {
+        [section performSelector:@selector(setDisplayData:) withObject:model];
     }
+    
     return section;
+}
+
+- (void)setDisplayData:(NRDSectionModel *)model {
+
 }
 
 + (NSString *)sectionString:(NRDSectionModel *)model {

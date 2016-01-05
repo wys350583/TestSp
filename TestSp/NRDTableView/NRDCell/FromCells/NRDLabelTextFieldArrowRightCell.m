@@ -36,7 +36,7 @@
 - (void)setTefText:(NSDictionary *)textDict {
     if (textDict) {
         self.txf.text = [NSString stringWithFormat:@"%@", textDict.allValues[0] ? textDict.allValues[0] : @""];
-        [self.reqModel setValue:[NSString stringWithFormat:@"%@", textDict.allKeys[0] ? textDict.allKeys[0] : @""] forKey:self.disPlayModel.keyString];
+        [self.reqModel setValue:[NSString stringWithFormat:@"%@", textDict.allKeys[0] ? textDict.allKeys[0] : @""] forKey:self.displayModel.keyString];
     }
 }
 

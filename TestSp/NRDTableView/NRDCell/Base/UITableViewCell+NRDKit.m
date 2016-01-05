@@ -21,8 +21,8 @@
 - (id)cellInit:(NRDCellModel *)model {
     Class cellClass = NSClassFromString([[self class] cellString:model]);
     id cell = [[cellClass alloc] init];
-    if ([cell respondsToSelector:@selector(setDisPlayData:)]) {
-        [cell performSelector:@selector(setDisPlayData:) withObject:model];
+    if ([cell respondsToSelector:@selector(setDisplayData:)]) {
+        [cell performSelector:@selector(setDisplayData:) withObject:model];
     }
     return cell;
 }
@@ -77,9 +77,9 @@
     return dict;
 }
 
-- (void)setDisPlayData:(NRDCellModel *)model {
-    if ([self respondsToSelector:@selector(setDisPlayData:)]) {
-        [self performSelector:@selector(setDisPlayData:) withObject:model];
+- (void)setDisplayData:(NRDCellModel *)model {
+    if ([self respondsToSelector:@selector(setDisplayData:)]) {
+        [self performSelector:@selector(setDisplayData:) withObject:model];
     }
 }
 

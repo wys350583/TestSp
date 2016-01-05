@@ -14,4 +14,6 @@
 
 - (id)initWithModel:(NRDSectionModel *)model;
 
+- (void)setDisplayData:(NRDSectionModel *)model;
+
 @end

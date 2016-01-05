@@ -15,8 +15,8 @@
 
 - (void)setUI;
 
-- (void)setDisPlayData:(NRDSectionModel *)model;
+- (void)setDisplayData:(NRDSectionModel *)model;
 
-- (NRDSectionModel *)disPlayModel;
+- (NRDSectionModel *)displayModel;
 
 @end

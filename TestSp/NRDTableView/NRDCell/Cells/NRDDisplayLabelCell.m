@@ -39,8 +39,8 @@
     
 }
 
-- (void)setDisPlayData:(NRDCellModel *)model {
-    [super setDisPlayData:model];
+- (void)setDisplayData:(NRDCellModel *)model {
+    [super setDisplayData:model];
     self.lab.text = model.labText ? model.labText : @"";
 }
 

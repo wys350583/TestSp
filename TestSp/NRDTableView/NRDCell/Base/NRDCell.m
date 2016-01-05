@@ -35,11 +35,11 @@
 
 }
 
-- (void)setDisPlayData:(NRDCellModel *)model {
+- (void)setDisplayData:(NRDCellModel *)model {
     _model = model;
 }
 
-- (NRDCellModel *)disPlayModel {
+- (NRDCellModel *)displayModel {
     return _model;
 }
 

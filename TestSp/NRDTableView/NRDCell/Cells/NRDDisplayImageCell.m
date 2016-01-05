@@ -33,8 +33,8 @@
     });
 }
 
-- (void)setDisPlayData:(NRDCellModel *)model {
-    [super setDisPlayData:model];
+- (void)setDisplayData:(NRDCellModel *)model {
+    [super setDisplayData:model];
     self.imgV.image = [UIImage imageNamed:model.imgVImageName ? model.imgVImageName : @""];
 }
 

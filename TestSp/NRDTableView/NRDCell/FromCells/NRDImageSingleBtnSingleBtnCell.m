@@ -33,8 +33,8 @@
             make.width.equalTo(@(cellSingleBtnWidth));
         }];
         singleBtn1.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
-        [singleBtn1 setImage:[UIImage imageNamed:self.disPlayModel.singleBtnImageNameNormal ? self.disPlayModel.singleBtnImageNameNormal : cellSingleBtnImageNormal] forState:UIControlStateNormal];
-        [singleBtn1 setImage:[UIImage imageNamed:self.disPlayModel.singleBtnImageNameSelected ? self.disPlayModel.singleBtnImageNameSelected : cellSingleBtnImageSelected] forState:UIControlStateSelected];
+        [singleBtn1 setImage:[UIImage imageNamed:self.displayModel.singleBtnImageNameNormal ? self.displayModel.singleBtnImageNameNormal : cellSingleBtnImageNormal] forState:UIControlStateNormal];
+        [singleBtn1 setImage:[UIImage imageNamed:self.displayModel.singleBtnImageNameSelected ? self.displayModel.singleBtnImageNameSelected : cellSingleBtnImageSelected] forState:UIControlStateSelected];
         singleBtn1.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 8);
         singleBtn1.titleLabel.font = [UIFont systemFontOfSize:cellSingleBtnTitleFontSize];
         [singleBtn1 setTitleColor:cellSingleBtnTitleColorNormal forState:UIControlStateNormal];
@@ -53,8 +53,8 @@
             make.width.equalTo(@(cellSingleBtnWidth));
         }];
         singleBtn0.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
-        [singleBtn0 setImage:[UIImage imageNamed:self.disPlayModel.singleBtnImageNameNormal ? self.disPlayModel.singleBtnImageNameNormal : cellSingleBtnImageNormal] forState:UIControlStateNormal];
-        [singleBtn0 setImage:[UIImage imageNamed:self.disPlayModel.singleBtnImageNameSelected ? self.disPlayModel.singleBtnImageNameSelected : cellSingleBtnImageSelected] forState:UIControlStateSelected];
+        [singleBtn0 setImage:[UIImage imageNamed:self.displayModel.singleBtnImageNameNormal ? self.displayModel.singleBtnImageNameNormal : cellSingleBtnImageNormal] forState:UIControlStateNormal];
+        [singleBtn0 setImage:[UIImage imageNamed:self.displayModel.singleBtnImageNameSelected ? self.displayModel.singleBtnImageNameSelected : cellSingleBtnImageSelected] forState:UIControlStateSelected];
         singleBtn0.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 8);
         singleBtn0.titleLabel.font = [UIFont systemFontOfSize:cellSingleBtnTitleFontSize];
         [singleBtn0 setTitleColor:cellSingleBtnTitleColorNormal forState:UIControlStateNormal];
@@ -80,8 +80,8 @@
     }
 }
 
-- (void)setDisPlayData:(NRDCellModel *)model {
-    [super setDisPlayData:model];
+- (void)setDisplayData:(NRDCellModel *)model {
+    [super setDisplayData:model];
     [self.singleBtn0 setTitle:model.singleBtn0Title ? model.singleBtn0Title : @"" forState:UIControlStateNormal];
     [self.singleBtn1 setTitle:model.singleBtn1Title ? model.singleBtn1Title : @"" forState:UIControlStateNormal];
 }

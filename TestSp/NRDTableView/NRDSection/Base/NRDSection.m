@@ -29,11 +29,11 @@
     
 }
 
-- (void)setDisPlayData:(NRDSectionModel *)model {
+- (void)setDisplayData:(NRDSectionModel *)model {
     _model = model;
 }
 
-- (NRDSectionModel *)disPlayModel {
+- (NRDSectionModel *)displayModel {
     return _model;
 }
 

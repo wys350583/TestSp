@@ -20,7 +20,9 @@
     [super setUI];
     self.delegate = self;
     
-    NRDSectionModel *sectionModel0 = [[NRDSectionModel alloc] initWithSectionType:NRDSectionTypeHorzLineLab];
+    NRDSectionModel *sectionModel0 = [[NRDSectionModel alloc] initWithSectionType:NRDSectionTypeHorzLineImgVLab];
+    sectionModel0.labText = @"色层提供";
+    sectionModel0.imgVImageName = @"产品信息";
     [self setSections:[@[sectionModel0] mutableCopy]];
     
     NRDCellModel *model0 = [[NRDCellModel alloc] initWithCellType:NRDCellTypeLabTxfDef];

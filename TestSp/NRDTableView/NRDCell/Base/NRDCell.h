@@ -17,9 +17,9 @@
 
 - (void)setUI;
 
-- (void)setDisPlayData:(NRDCellModel *)model;
+- (void)setDisplayData:(NRDCellModel *)model;
 
-- (NRDCellModel *)disPlayModel;
+- (NRDCellModel *)displayModel;
 
 - (void)setReqData:(id)reqModel;
 

@@ -10,4 +10,6 @@
 
 @interface NRDNormalLabSection : NRDNormalSection
 
+@property (nonatomic, strong) UILabel *lab;
+
 @end

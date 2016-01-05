@@ -10,4 +10,8 @@
 
 @interface NRDHorzLineImgVLabSection : NRDHorzLineSection
 
+@property (nonatomic, strong) UIImageView *imgV;
+
+@property (nonatomic, strong) UILabel *lab;
+
 @end

@@ -16,7 +16,7 @@
 
 + (NSString *)cellString:(NRDCellModel *)model;
 
-- (void)setDisPlayData:(NRDCellModel *)model;
+- (void)setDisplayData:(NRDCellModel *)model;
 
 - (void)setReqData:(id)reqModel;
 

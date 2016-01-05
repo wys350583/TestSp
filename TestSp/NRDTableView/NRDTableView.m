@@ -58,7 +58,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithModel:model];
     }
-    [cell setDisPlayData:model];
+    [cell setDisplayData:model];
     [cell setReqData:self.model];
     
     return cell;

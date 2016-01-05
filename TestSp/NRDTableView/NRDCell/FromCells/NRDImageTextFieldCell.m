@@ -41,15 +41,15 @@
     });
 }
 
-- (void)setDisPlayData:(NRDCellModel *)model {
-    [super setDisPlayData:model];
+- (void)setDisplayData:(NRDCellModel *)model {
+    [super setDisplayData:model];
     self.txf.placeholder = model.txfPlaceHolder ? model.txfPlaceHolder : @"";
 }
 
 - (void)setReqData:(id)reqModel {
     [super setReqData:reqModel];
-    if (self.disPlayModel.keyString) {
-        self.txf.text = [reqModel valueForKey:self.disPlayModel.keyString];
+    if (self.displayModel.keyString) {
+        self.txf.text = [reqModel valueForKey:self.displayModel.keyString];
     }
 }
 
