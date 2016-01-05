@@ -20,6 +20,10 @@
 
 - (void)setReqData:(id)reqModel;
 
-- (void)setTefText:(NSString *)text;
+/**
+ *  弹出pickView或者新页面选择时用
+ *
+ */
+- (void)setTefText:(NSDictionary *)textDict;
 
 @end

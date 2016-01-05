@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UITableViewCell+NRDKit.h"
+#import "UIView+NRDKit.h"
 
 @protocol NRDTableViewDelegate <NSObject>
 @optional
@@ -19,6 +20,10 @@
 @interface NRDTableView : UITableView
 
 @property (nonatomic, weak)id <NRDTableViewDelegate> nrdDelegate;
+
+- (void)setUI;
+
+- (void)setSections:(NSMutableArray *)sections;
 
 - (void)setCells:(NSMutableArray *)cells;
 

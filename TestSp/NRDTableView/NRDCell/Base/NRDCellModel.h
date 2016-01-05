@@ -25,7 +25,6 @@ typedef NS_ENUM(NSInteger, NRDCellType) {
     
     NRDCellTypeLabSingleBtnSingleBtn,
     
-    NRDCellTypeImgV,
     NRDCellTypeImgVLab,
     NRDCellTypeImgVLabArrowR,
     NRDCellTypeImgVLabDetailLab,
@@ -40,12 +39,6 @@ typedef NS_ENUM(NSInteger, NRDCellType) {
     NRDCellTypeImgVTxfArrowR,
     
     NRDCellTypeImgVSingleBtnSingleBtn,
-    
-    //    NRDCellTypeImgVLabTxfDef,
-    //    NRDCellTypeImgVLabTxfNum,
-    //    NRDCellTypeImgVLabTxfPsw,
-    //    NRDCellTypeImgVLabTxfIdcard,
-    //    NRDCellTypeImgVLabTxfArrowR,
     
 };
 
@@ -66,6 +59,11 @@ typedef NS_ENUM(NSInteger, NRDCellType) {
 @property (nonatomic, strong)NSString *singleBtn0Title;
 
 @property (nonatomic, strong)NSString *singleBtn1Title;
+
+//左边不是0右边不是1时设
+@property (nonatomic, assign)NSInteger singleBtn0SelectedKey;
+
+@property (nonatomic, assign)NSInteger singleBtn1SelectedKey;
 
 @property (nonatomic, strong)NSString *imgVImageName;
 
