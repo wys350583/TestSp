@@ -7,14 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "NRDTableView.h"
-#import "TestModel.h"
-#import "PersonalInfoVerifyTV.h"
-#import "LoanProductDetailTV.h"
 
-@interface ViewController ()<NRDTableViewDelegate>
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, strong)TestModel *model;
+@property (nonatomic, strong)UITableView *tableView;
+
+@property (nonatomic, strong)NSMutableArray *cells;
 
 @end
 
@@ -23,35 +21,40 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.model = [[TestModel alloc] init];
-    self.model.text0 = @"text0";
-    self.model.text1 = @"text1";
-    self.model.text2 = @"text2";
-    self.model.text3 = @"text3";
-    self.model.text4 = @"text4";
-    self.model.selectIndex = 0;
+    self.cells = @[
+                   @"LoanProductDetailVC",
+                   
+                   ].mutableCopy;
     
-    LoanProductDetailTV *tv = [[LoanProductDetailTV alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-    [tv setModel:self.model];
-    [self.view addSubview:tv];
-    tv.nrdDelegate = self;
     
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.view.frame) - 30, CGRectGetWidth(self.view.frame), 30)];
-    [self.view addSubview:btn];
-    [btn addTarget:self action:@selector(btnAct) forControlEvents:UIControlEventTouchUpInside];
-    
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height - 64)];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
 }
 
-- (void)tableView:(UITableView *)tableView cell:(UITableViewCell *)cell didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0) {
-        if (indexPath.row == 4) {
-            [cell setTefText:@{@"daikuan" : @"老板，贷款吗？"}] ;
-        }
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.cells.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"YY"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"YY"];
     }
+    cell.textLabel.text = self.cells[indexPath.row];
+    return cell;
 }
 
-- (void)btnAct {
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *className = self.cells[indexPath.row];
+    Class class = NSClassFromString(className);
+    if (class) {
+        UIViewController *ctrl = class.new;
+        ctrl.title = self.cells[indexPath.row];
+        [self.navigationController pushViewController:ctrl animated:YES];
+    }
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
