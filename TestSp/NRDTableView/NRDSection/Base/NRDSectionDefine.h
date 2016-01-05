@@ -24,7 +24,7 @@
 #define sectionHorzLineBackgroundColor         [UIColor colorWithRed:0.65 green:0.72 blue:0.8 alpha:1]
 
 #define sectionLabFontSize                      13
-#define sectionLabTextColor                    [UIColor colorWithRed:0.1 green:0.1 blue:0.1 alpha:1]
+#define sectionLabTextColor                    [UIColor colorWithRed:0.35 green:0.47 blue:0.65 alpha:1]
 
 #define sectionImgVSize                         20
 

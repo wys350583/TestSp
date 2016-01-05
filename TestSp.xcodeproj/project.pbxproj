@@ -53,6 +53,7 @@
 		F85086021C3BA2D00036231A /* NRDHorzLineLab_D_DetailLabSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F85086011C3BA2D00036231A /* NRDHorzLineLab_D_DetailLabSection.m */; };
 		F85086051C3BA2E40036231A /* NRDHorzLineImgVLabSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F85086041C3BA2E40036231A /* NRDHorzLineImgVLabSection.m */; };
 		F85086081C3BA2F30036231A /* NRDHorzLineImgVLab_D_DetailLabSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F85086071C3BA2F30036231A /* NRDHorzLineImgVLab_D_DetailLabSection.m */; };
+		F850860B1C3BC2B90036231A /* LoanProductDetailTV.m in Sources */ = {isa = PBXBuildFile; fileRef = F850860A1C3BC2B90036231A /* LoanProductDetailTV.m */; };
 		F884A0281C2AD52B000A9F18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F884A0271C2AD52B000A9F18 /* main.m */; };
 		F884A02B1C2AD52B000A9F18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F884A02A1C2AD52B000A9F18 /* AppDelegate.m */; };
 		F884A02E1C2AD52B000A9F18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F884A02D1C2AD52B000A9F18 /* ViewController.m */; };
@@ -164,6 +165,8 @@
 		F85086041C3BA2E40036231A /* NRDHorzLineImgVLabSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRDHorzLineImgVLabSection.m; sourceTree = "<group>"; };
 		F85086061C3BA2F30036231A /* NRDHorzLineImgVLab_D_DetailLabSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRDHorzLineImgVLab_D_DetailLabSection.h; sourceTree = "<group>"; };
 		F85086071C3BA2F30036231A /* NRDHorzLineImgVLab_D_DetailLabSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRDHorzLineImgVLab_D_DetailLabSection.m; sourceTree = "<group>"; };
+		F85086091C3BC2B90036231A /* LoanProductDetailTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoanProductDetailTV.h; sourceTree = "<group>"; };
+		F850860A1C3BC2B90036231A /* LoanProductDetailTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoanProductDetailTV.m; sourceTree = "<group>"; };
 		F884A0231C2AD52B000A9F18 /* TestSp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F884A0271C2AD52B000A9F18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F884A0291C2AD52B000A9F18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -382,6 +385,8 @@
 				F884A0261C2AD52B000A9F18 /* Supporting Files */,
 				F850857E1C3B57710036231A /* PersonalInfoVerifyTV.h */,
 				F850857F1C3B57710036231A /* PersonalInfoVerifyTV.m */,
+				F85086091C3BC2B90036231A /* LoanProductDetailTV.h */,
+				F850860A1C3BC2B90036231A /* LoanProductDetailTV.m */,
 			);
 			path = TestSp;
 			sourceTree = "<group>";
@@ -603,6 +608,7 @@
 				F85085CD1C3B6BF10036231A /* NRDLabelDetailLabelCell.m in Sources */,
 				F85085C51C3B6BF10036231A /* NRDImageLabelArrowRightCell.m in Sources */,
 				F884A02B1C2AD52B000A9F18 /* AppDelegate.m in Sources */,
+				F850860B1C3BC2B90036231A /* LoanProductDetailTV.m in Sources */,
 				F85085C91C3B6BF10036231A /* NRDLabel_D_DetailLabelArrowRightCell.m in Sources */,
 				F85085D41C3B6BF10036231A /* NRDImageTextFieldPswCell.m in Sources */,
 				F85085C71C3B6BF10036231A /* NRDImageLabelDetailLabelArrowRightCell.m in Sources */,

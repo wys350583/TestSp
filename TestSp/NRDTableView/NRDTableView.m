@@ -85,7 +85,11 @@
 
 //sectionHeader's view
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    return [[UIView alloc] initWithModel:self.sections[section]];
+    UIView *view;
+    if (section < self.sections.count) {
+        view = [[UIView alloc] initWithModel:self.sections[section]];
+    }
+    return view;
 }
 
 //sectionFooter's height
@@ -107,7 +111,8 @@
 
 //cell's height
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 54;
+    NRDCellModel *model = [self.cells[indexPath.section] objectAtIndex:indexPath.row];
+    return model.cellHeight > 0 ? model.cellHeight : 54;
 }
 
 @end

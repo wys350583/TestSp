@@ -10,6 +10,7 @@
 #import "NRDTableView.h"
 #import "TestModel.h"
 #import "PersonalInfoVerifyTV.h"
+#import "LoanProductDetailTV.h"
 
 @interface ViewController ()<NRDTableViewDelegate>
 
@@ -30,7 +31,7 @@
     self.model.text4 = @"text4";
     self.model.selectIndex = 0;
     
-    PersonalInfoVerifyTV *tv = [[PersonalInfoVerifyTV alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    LoanProductDetailTV *tv = [[LoanProductDetailTV alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     [tv setModel:self.model];
     [self.view addSubview:tv];
     tv.nrdDelegate = self;

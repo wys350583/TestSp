@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSInteger, NRDCellType) {
+    //displayCells
     NRDCellTypeLab = 0,
     NRDCellTypeLabArrowR,
     NRDCellTypeLabDetailLab,
@@ -17,6 +18,14 @@ typedef NS_ENUM(NSInteger, NRDCellType) {
     NRDCellTypeLab_D_DetailLab,
     NRDCellTypeLab_D_DetailLabArrowR,
     
+    NRDCellTypeImgVLab,
+    NRDCellTypeImgVLabArrowR,
+    NRDCellTypeImgVLabDetailLab,
+    NRDCellTypeImgVLabDetailLabArrowR,
+    NRDCellTypeImgVLab_D_DetailLab,
+    NRDCellTypeImgVLab_D_DetailLabArrowR,
+    
+    //formCells
     NRDCellTypeLabTxfDef,
     NRDCellTypeLabTxfNum,
     NRDCellTypeLabTxfIdcard,
@@ -24,13 +33,6 @@ typedef NS_ENUM(NSInteger, NRDCellType) {
     NRDCellTypeLabTxfArrowR,
     
     NRDCellTypeLabSingleBtnSingleBtn,
-    
-    NRDCellTypeImgVLab,
-    NRDCellTypeImgVLabArrowR,
-    NRDCellTypeImgVLabDetailLab,
-    NRDCellTypeImgVLabDetailLabArrowR,
-    NRDCellTypeImgVLab_D_DetailLab,
-    NRDCellTypeImgVLab_D_DetailLabArrowR,
     
     NRDCellTypeImgVTxfDef,
     NRDCellTypeImgVTxfNum,
@@ -45,6 +47,8 @@ typedef NS_ENUM(NSInteger, NRDCellType) {
 @interface NRDCellModel : NSObject
 
 @property (nonatomic, assign)NRDCellType cellType;
+
+@property (nonatomic, assign)float cellHeight;
 
 @property (nonatomic, strong)NSString *labText;
 
