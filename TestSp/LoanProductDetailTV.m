@@ -19,6 +19,10 @@
 - (void)setUI {
     [super setUI];
     
+    NRDHeaderModel *headerModel = [[NRDHeaderModel alloc] initWithHeaderType:NRDHeaderTypeImgV];
+    headerModel.imgVImageName = @"smallBanner";
+    [self setHeader:headerModel];
+    
     NRDSectionModel *sectionModel0 = [[NRDSectionModel alloc] initWithSectionType:NRDSectionTypeHorzLineImgVLab];
     sectionModel0.labText = @"产品信息";
     sectionModel0.imgVImageName = @"产品信息";
@@ -45,21 +49,18 @@
     NRDCellModel *model0 = [[NRDCellModel alloc] initWithCellType:NRDCellTypeLab];
     model0.labText = @"贷款贷款贷";
     model0.cellHeight = 85;
-    model0.keyString = @"text0";
     
-    NRDCellModel *model1 = [[NRDCellModel alloc] initWithCellType:NRDCellTypeLab];
-    model1.labText = @"1贷款";
+    NRDCellModel *model1 = [[NRDCellModel alloc] initWithCellType:NRDCellTypeDisplayMutiRowLab];
+    model1.cellHeight = 44;
+    model1.keyString = @"function_condition";
     
+    NRDCellModel *model2 = [[NRDCellModel alloc] initWithCellType:NRDCellTypeDisplayMutiRowLab];
+    model2.cellHeight = 90;
+    model2.keyString = @"function_file";
     
-    NRDCellModel *model2 = [[NRDCellModel alloc] initWithCellType:NRDCellTypeLab];
-    model2.labText = @"2贷款";
-    model2.txfPlaceHolder = @"2先生，您需要贷款么？";
-    model2.keyString = @"text2";
-    
-    NRDCellModel *model3 = [[NRDCellModel alloc] initWithCellType:NRDCellTypeLab];
-    model3.labText = @"3贷款";
-    model3.txfPlaceHolder = @"3先生，您需要贷款么？";
-    model3.keyString = @"text3";
+    NRDCellModel *model3 = [[NRDCellModel alloc] initWithCellType:NRDCellTypeDisplayMutiRowLab];
+    model3.cellHeight = 90;
+    model3.labText = @"牛人贷根据用户的信用情况，对用户申请金额进行审批调整，提交的材料越多，审批额度、放款速度越快。";
     
     self.cells = [@[
                     [@[
