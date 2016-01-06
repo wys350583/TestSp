@@ -10,6 +10,8 @@
 
 @interface NRDTableView()<UITableViewDelegate, UITableViewDataSource>
 
+@property (nonatomic, strong)NRDHeaderModel *header;
+
 @property (nonatomic, strong)NSMutableArray *cells;
 
 @property (nonatomic, strong)NSMutableArray *sections;
@@ -26,6 +28,11 @@
         [self setUI];
     }
     return self;
+}
+
+- (void)setHeader:(NRDHeaderModel *)header {
+    _header = header;
+    self.tableHeaderView = [[UIView alloc] initWithHeaderModel:header];
 }
 
 - (void)setSections:(NSMutableArray *)sections {

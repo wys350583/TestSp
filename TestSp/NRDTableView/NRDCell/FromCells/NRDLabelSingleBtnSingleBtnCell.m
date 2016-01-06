@@ -81,7 +81,7 @@
 
 - (void)setReqData:(id)reqModel {
     [super setReqData:reqModel];
-    if (self.displayModel.keyString) {
+    if (reqModel && self.displayModel.keyString) {
         if (self.displayModel.singleBtn0SelectedKey != 0 && self.displayModel.singleBtn1SelectedKey != 1) {
             if ([[self.reqModel valueForKey:self.displayModel.keyString] integerValue] == self.displayModel.singleBtn0SelectedKey) {
                 self.singleBtn0.selected = YES;

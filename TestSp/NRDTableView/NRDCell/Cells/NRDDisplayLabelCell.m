@@ -44,4 +44,11 @@
     self.lab.text = model.labText ? model.labText : @"";
 }
 
+- (void)setReqData:(id)reqModel {
+    [super setReqData:reqModel];
+    if (reqModel && self.displayModel.keyString) {
+        self.lab.text = [reqModel valueForKey:self.displayModel.keyString];
+    }
+}
+
 @end

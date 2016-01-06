@@ -1,14 +1,14 @@
 //
-//  UITableViewCell+NRDKit.m
+//  UITableViewCell+NRDCell.m
 //  TestSp
 //
 //  Created by 一鸿温 on 15/12/26.
 //  Copyright © 2015年 wyh. All rights reserved.
 //
 
-#import "UITableViewCell+NRDKit.h"
+#import "UITableViewCell+NRDCell.h"
 
-@implementation UITableViewCell (NRDKit)
+@implementation UITableViewCell (NRDCell)
 
 - (id)initWithModel:(NRDCellModel *)model {
     self = [self init];
@@ -38,6 +38,7 @@
         dict = @{
                  //DisplayCells
                  @(NRDCellTypeLab) :                         @"NRDDisplayLabelCell",
+                 @(NRDCellTypeDisplayMutiRowLab):            @"NRDDisplayMutiRowLabCell",
                  @(NRDCellTypeLabArrowR) :                   @"NRDLabelArrowRightCell",
                  @(NRDCellTypeLabDetailLab) :                @"NRDLabelDetailLabelCell",
                  @(NRDCellTypeLabDetailLab0) :               @"NRDLabelDetailLabelCell0",

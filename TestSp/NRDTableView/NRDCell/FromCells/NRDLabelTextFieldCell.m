@@ -59,7 +59,7 @@
 
 - (void)setReqData:(id)reqModel {
     [super setReqData:reqModel];
-    if (self.displayModel.keyString) {
+    if (reqModel && self.displayModel.keyString) {
         self.txf.text = [reqModel valueForKey:self.displayModel.keyString];
     }
 }

@@ -1,14 +1,14 @@
 //
-//  UIView+NRDKit.m
+//  UIView+NRDSection.m
 //  TestSp
 //
 //  Created by 一鸿温 on 16/1/5.
 //  Copyright © 2016年 wyh. All rights reserved.
 //
 
-#import "UIView+NRDKit.h"
+#import "UIView+NRDSection.h"
 
-@implementation UIView (NRDKit)
+@implementation UIView (NRDSection)
 
 - (id)initWithModel:(NRDSectionModel *)model {
     self = [self init];
@@ -26,10 +26,6 @@
     }
     
     return section;
-}
-
-- (void)setDisplayData:(NRDSectionModel *)model {
-
 }
 
 + (NSString *)sectionString:(NRDSectionModel *)model {
@@ -53,6 +49,10 @@
                  };
     });
     return dict;
+}
+
+- (void)setDisplayData:(NRDSectionModel *)model {
+    
 }
 
 @end

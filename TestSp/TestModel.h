@@ -17,4 +17,6 @@
 @property (nonatomic, strong)NSString *text4;
 @property (nonatomic, assign)NSInteger selectIndex;
 
+@property (nonatomic, strong)NSString *function_condition;
+@property (nonatomic, strong)NSString *function_file;
 @end

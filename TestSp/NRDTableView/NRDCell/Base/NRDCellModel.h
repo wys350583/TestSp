@@ -11,6 +11,7 @@
 typedef NS_ENUM(NSInteger, NRDCellType) {
     //displayCells
     NRDCellTypeLab = 0,
+    NRDCellTypeDisplayMutiRowLab,
     NRDCellTypeLabArrowR,
     NRDCellTypeLabDetailLab,
     NRDCellTypeLabDetailLab0,

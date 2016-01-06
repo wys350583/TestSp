@@ -1,5 +1,5 @@
 //
-//  UITableViewCell+NRDKit.h
+//  UITableViewCell+NRDCell.h
 //  TestSp
 //
 //  Created by 一鸿温 on 15/12/26.
@@ -10,7 +10,7 @@
 #import "NRDCellModel.h"
 
 
-@interface UITableViewCell (NRDKit)
+@interface UITableViewCell (NRDCell)
 
 - (id)initWithModel:(NRDCellModel *)model;
 

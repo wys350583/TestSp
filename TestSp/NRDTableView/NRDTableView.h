@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UITableViewCell+NRDKit.h"
-#import "UIView+NRDKit.h"
+#import "UITableViewCell+NRDCell.h"
+#import "UIView+NRDSection.h"
+#import "UIView+NRDHeader.h"
 
 @protocol NRDTableViewDelegate <NSObject>
 @optional
@@ -22,6 +23,8 @@
 @property (nonatomic, weak)id <NRDTableViewDelegate> nrdDelegate;
 
 - (void)setUI;
+
+- (void)setHeader:(NRDHeaderModel *)header;
 
 - (void)setSections:(NSMutableArray *)sections;
 

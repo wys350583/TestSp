@@ -1,5 +1,5 @@
 //
-//  UIView+NRDKit.h
+//  UIView+NRDSection.h
 //  TestSp
 //
 //  Created by 一鸿温 on 16/1/5.
@@ -10,7 +10,7 @@
 #import "NRDSectionModel.h"
 
 
-@interface UIView (NRDKit)
+@interface UIView (NRDSection)
 
 - (id)initWithModel:(NRDSectionModel *)model;
 
