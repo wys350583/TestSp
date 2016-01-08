@@ -11,8 +11,6 @@
 @implementation XNVerifyRequest
 
 -(void)loadRequest{
-    [super loadRequest];
-    self.PATH = @"/realNameAuth/verify";
 }
 
 @end

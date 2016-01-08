@@ -8,6 +8,7 @@
 
 #import "NRDNormalTwoProgressSection.h"
 #import "NRDNormalTwoProgressModel.h"
+#import <ReactiveCocoa.h>
 
 @interface NRDNormalTwoProgressSection()
 

@@ -12,6 +12,9 @@
 //屏幕宽
 #define sectionWidth                           [UIScreen mainScreen].bounds.size.width
 
+#define kWidth                           [UIScreen mainScreen].bounds.size.width
+
+
 #define sectionLeftOffset                      16
 #define sectionRightOffset                     -16
 

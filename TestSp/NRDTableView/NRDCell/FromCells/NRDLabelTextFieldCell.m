@@ -7,6 +7,7 @@
 //
 
 #import "NRDLabelTextFieldCell.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface NRDLabelTextFieldCell()
 

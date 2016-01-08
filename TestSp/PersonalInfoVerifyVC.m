@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.request = [XNVerifyRequest request];
+    self.request = [[XNVerifyRequest alloc] init];
     
     PersonalInfoVerifyTV *tableView = [[PersonalInfoVerifyTV alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     [tableView setModel:self.request];

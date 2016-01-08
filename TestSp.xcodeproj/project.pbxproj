@@ -80,7 +80,6 @@
 		F8F0E7C41C3263E700616554 /* singleBtnImage_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F0E7A11C3263E700616554 /* singleBtnImage_selected@3x.png */; };
 		F8F0E7C51C3263E700616554 /* NRDTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F0E7A31C3263E700616554 /* NRDTableView.m */; };
 		F8F8B4531C3E368E008DE652 /* PersonalInfoVerifyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F8B4521C3E368E008DE652 /* PersonalInfoVerifyVC.m */; };
-		F8F8B4561C3E3BDC008DE652 /* NRDNormalTwoProgressSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F8B4551C3E3BDC008DE652 /* NRDNormalTwoProgressSection.m */; };
 		F8F8B46A1C3FC313008DE652 /* XNVerifyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F8B4691C3FC313008DE652 /* XNVerifyRequest.m */; };
 		F8F8B4701C3FC330008DE652 /* NRDNormalTwoProgressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F8B46D1C3FC330008DE652 /* NRDNormalTwoProgressModel.m */; };
 		F8F8B4711C3FC330008DE652 /* NRDNormalTwoProgressSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F8B46F1C3FC330008DE652 /* NRDNormalTwoProgressSection.m */; };
@@ -230,8 +229,6 @@
 		F8F0E7A31C3263E700616554 /* NRDTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRDTableView.m; sourceTree = "<group>"; };
 		F8F8B4511C3E368E008DE652 /* PersonalInfoVerifyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalInfoVerifyVC.h; sourceTree = "<group>"; };
 		F8F8B4521C3E368E008DE652 /* PersonalInfoVerifyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalInfoVerifyVC.m; sourceTree = "<group>"; };
-		F8F8B4541C3E3BDC008DE652 /* NRDNormalTwoProgressSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRDNormalTwoProgressSection.h; sourceTree = "<group>"; };
-		F8F8B4551C3E3BDC008DE652 /* NRDNormalTwoProgressSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRDNormalTwoProgressSection.m; sourceTree = "<group>"; };
 		F8F8B4681C3FC313008DE652 /* XNVerifyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XNVerifyRequest.h; sourceTree = "<group>"; };
 		F8F8B4691C3FC313008DE652 /* XNVerifyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XNVerifyRequest.m; sourceTree = "<group>"; };
 		F8F8B46C1C3FC330008DE652 /* NRDNormalTwoProgressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRDNormalTwoProgressModel.h; sourceTree = "<group>"; };
@@ -316,8 +313,6 @@
 				F85086041C3BA2E40036231A /* NRDHorzLineImgVLabSection.m */,
 				F85086061C3BA2F30036231A /* NRDHorzLineImgVLab_D_DetailLabSection.h */,
 				F85086071C3BA2F30036231A /* NRDHorzLineImgVLab_D_DetailLabSection.m */,
-				F8F8B4541C3E3BDC008DE652 /* NRDNormalTwoProgressSection.h */,
-				F8F8B4551C3E3BDC008DE652 /* NRDNormalTwoProgressSection.m */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -730,7 +725,6 @@
 				F8DB1B5D1C3D077300264963 /* NSString+NRDFormat.m in Sources */,
 				F8DB1B5A1C3D031800264963 /* NSObject+NRDFormat.m in Sources */,
 				F85085D71C3B6BF10036231A /* NRDLabelTextFieldCell.m in Sources */,
-				F8F8B4561C3E3BDC008DE652 /* NRDNormalTwoProgressSection.m in Sources */,
 				F85085F31C3B9EBA0036231A /* NRDNormalLabSection.m in Sources */,
 				F85085E01C3B73B60036231A /* NRDDisplayLabelCell.m in Sources */,
 				F8DB1B551C3CE8D800264963 /* NRDLoadProductRateModel.m in Sources */,

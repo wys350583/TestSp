@@ -6,9 +6,9 @@
 //  Copyright © 2015年 深圳市小牛资本管理集团. All rights reserved.
 //
 
-#import "XNRequest.h"
+#import <Foundation/Foundation.h>
 // 验证信息参数
-@interface XNVerifyRequest : XNRequest
+@interface XNVerifyRequest : NSObject
 
 // 用户id
 @property (nonatomic,strong) NSString *uid;
