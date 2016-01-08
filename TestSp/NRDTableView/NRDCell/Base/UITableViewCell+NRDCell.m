@@ -73,6 +73,8 @@
                  
                  @(NRDCellTypeImgVSingleBtnSingleBtn) :      @"NRDImageSingleBtnSingleBtnCell",
                  
+                 @(NRDCellTypeLoadProductRate) :             @"NRDLoadProductRateCell"
+                 
                  };
     });
     return dict;

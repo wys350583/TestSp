@@ -43,6 +43,9 @@ typedef NS_ENUM(NSInteger, NRDCellType) {
     
     NRDCellTypeImgVSingleBtnSingleBtn,
     
+    //custom
+    NRDCellTypeLoadProductRate,
+    
 };
 
 @interface NRDCellModel : NSObject

@@ -10,4 +10,6 @@
 
 @interface LoanProductDetailTV : NRDTableView
 
+- (instancetype)initWithFrame:(CGRect)frame model:(id)model;
+
 @end

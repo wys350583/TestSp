@@ -10,6 +10,8 @@
 #import "NRDSectionDefine.h"
 #import <Masonry.h>
 #import "NRDSectionModel.h"
+#import "NSObject+NRDFormat.h"
+#import "NSString+NRDFormat.h"
 
 @interface NRDSection : UIView
 
@@ -18,5 +20,9 @@
 - (void)setDisplayData:(NRDSectionModel *)model;
 
 - (NRDSectionModel *)displayModel;
+
+- (void)setReqData:(id)reqModel;
+
+- (id)reqModel;
 
 @end

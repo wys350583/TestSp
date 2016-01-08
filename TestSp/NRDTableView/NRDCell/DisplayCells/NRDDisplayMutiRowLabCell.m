@@ -22,14 +22,15 @@
 - (void)setUI {
     [super setUI];
     
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     self.lab.numberOfLines = 0;
     self.lab.textColor = [UIColor colorWithRed:0.6 green:0.6 blue:0.6 alpha:1];
-    
 }
 
 - (void)setDisplayData:(NRDCellModel *)model {
     [super setDisplayData:model];
-    NSString *labText = model.labText ? model.labText : @"";
+    NSString *labText = model.labText ? [model.labText stringByReplacingOccurrencesOfString:@"," withString:@"\n"] : @"";
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:labText];
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     paragraphStyle.alignment = NSTextAlignmentLeft;
@@ -41,7 +42,7 @@
 
 - (void)setReqData:(id)reqModel {
     if (reqModel && self.displayModel.keyString) {
-        NSString *labText = [reqModel valueForKey:self.displayModel.keyString];
+        NSString *labText = [[reqModel valueForKey:self.displayModel.keyString] stringByReplacingOccurrencesOfString:@"," withString:@"\n"];
         NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:labText];
         NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
         paragraphStyle.alignment = NSTextAlignmentLeft;

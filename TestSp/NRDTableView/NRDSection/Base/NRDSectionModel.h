@@ -18,11 +18,15 @@ typedef NS_ENUM(NSInteger, NRDSectionType) {
     NRDSectionTypeHorzLineLab_D_DetailLab,
     NRDSectionTypeHorzLineImgVLab,
     NRDSectionTypeHorzLineImgVLab_D_DetailLab,
+    
+    NRDSectionTypeNormalTwoProgress,
 };
 
 @interface NRDSectionModel : NSObject
 
 @property (nonatomic, assign)NRDSectionType sectionType;
+
+@property (nonatomic, assign)float sectionHeight;
 
 @property (nonatomic, strong)NSString *labText;
 

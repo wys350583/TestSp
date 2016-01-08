@@ -19,4 +19,13 @@
 
 @property (nonatomic, strong)NSString *function_condition;
 @property (nonatomic, strong)NSString *function_file;
+
+@property (nonatomic, strong)NSString *function_min;
+@property (nonatomic, strong)NSString *function_max;
+@property (nonatomic, strong)NSString *function_month_rate;
+@property (nonatomic, strong)NSString *function_manage_rate;
+@property (nonatomic, strong)NSString *function_time_month;
+
+@property (nonatomic, strong)NSString *function_type;
+
 @end

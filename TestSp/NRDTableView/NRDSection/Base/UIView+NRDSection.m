@@ -46,6 +46,9 @@
                  @(NRDSectionTypeHorzLineLab_D_DetailLab) :      @"NRDHorzLineLab_D_DetailLabSection",
                  @(NRDSectionTypeHorzLineImgVLab) :              @"NRDHorzLineImgVLabSection",
                  @(NRDSectionTypeHorzLineImgVLab_D_DetailLab) :  @"NRDHorzLineImgVLab_D_DetailLabSection",
+                 
+                 @(NRDSectionTypeNormalTwoProgress) : @"NRDNormalTwoProgressSection",
+                 
                  };
     });
     return dict;
@@ -53,6 +56,12 @@
 
 - (void)setDisplayData:(NRDSectionModel *)model {
     
+}
+
+- (void)setReqData:(id)reqModel {
+    if ([self respondsToSelector:@selector(setReqData:)]) {
+        [self performSelector:@selector(setReqData:) withObject:reqModel];
+    }
 }
 
 @end

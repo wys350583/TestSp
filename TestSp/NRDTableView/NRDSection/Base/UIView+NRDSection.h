@@ -16,4 +16,6 @@
 
 - (void)setDisplayData:(NRDSectionModel *)model;
 
+- (void)setReqData:(id)reqModel;
+
 @end

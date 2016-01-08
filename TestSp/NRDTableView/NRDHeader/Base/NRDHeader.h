@@ -10,6 +10,8 @@
 #import <Masonry.h>
 #import "NRDHeaderModel.h"
 #import "NRDHeaderDefine.h"
+#import "NSObject+NRDFormat.h"
+#import "NSString+NRDFormat.h"
 
 @interface NRDHeader : UIView
 

@@ -10,6 +10,8 @@
 #import <Masonry.h>
 #import "NRDCellDefine.h"
 #import "NRDCellModel.h"
+#import "NSObject+NRDFormat.h"
+#import "NSString+NRDFormat.h"
 
 @interface NRDCell : UITableViewCell
 

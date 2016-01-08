@@ -20,9 +20,17 @@
 
 @interface NRDTableView : UITableView
 
+@property (nonatomic, strong)id model;
+
 @property (nonatomic, weak)id <NRDTableViewDelegate> nrdDelegate;
 
 - (void)setUI;
+
+- (void)setHeaderUI;
+
+- (void)setSectionsUI;
+
+- (void)setCellsUI;
 
 - (void)setHeader:(NRDHeaderModel *)header;
 

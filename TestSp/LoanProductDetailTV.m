@@ -7,6 +7,7 @@
 //
 
 #import "LoanProductDetailTV.h"
+#import "NRDLoadProductRateModel.h"
 
 @interface LoanProductDetailTV()
 
@@ -16,28 +17,51 @@
 
 @implementation LoanProductDetailTV
 
+- (instancetype)initWithFrame:(CGRect)frame model:(id)model
+{
+    self = [super initWithFrame:frame style:UITableViewStylePlain];
+    if (self) {
+        self.model = model;
+        [self setUI];
+    }
+    return self;
+}
+
 - (void)setUI {
     [super setUI];
+
+}
+
+- (void)setHeaderUI {
+    [super setHeaderUI];
     
     NRDHeaderModel *headerModel = [[NRDHeaderModel alloc] initWithHeaderType:NRDHeaderTypeImgV];
     headerModel.imgVImageName = @"smallBanner";
     [self setHeader:headerModel];
+}
+
+- (void)setSectionsUI {
+    [super setSectionsUI];
     
     NRDSectionModel *sectionModel0 = [[NRDSectionModel alloc] initWithSectionType:NRDSectionTypeHorzLineImgVLab];
+    sectionModel0.sectionHeight = 38;
     sectionModel0.labText = @"产品信息";
-    sectionModel0.imgVImageName = @"产品信息";
+    sectionModel0.imgVImageName = @"first_productinfo";
     
     NRDSectionModel *sectionModel1 = [[NRDSectionModel alloc] initWithSectionType:NRDSectionTypeHorzLineImgVLab];
+    sectionModel1.sectionHeight = 38;
     sectionModel1.labText = @"申请条件";
-    sectionModel1.imgVImageName = @"产品信息";
+    sectionModel1.imgVImageName = @"first_applycondition";
     
     NRDSectionModel *sectionModel2 = [[NRDSectionModel alloc] initWithSectionType:NRDSectionTypeHorzLineImgVLab];
+    sectionModel2.sectionHeight = 38;
     sectionModel2.labText = @"提供素材";
-    sectionModel2.imgVImageName = @"产品信息";
+    sectionModel2.imgVImageName = @"first_providesource";
     
     NRDSectionModel *sectionModel3 = [[NRDSectionModel alloc] initWithSectionType:NRDSectionTypeHorzLineImgVLab];
+    sectionModel3.sectionHeight = 38;
     sectionModel3.labText = @"申请与审批";
-    sectionModel3.imgVImageName = @"产品信息";
+    sectionModel3.imgVImageName = @"申请与审批";
     
     [self setSections:[@[
                          sectionModel0,
@@ -45,13 +69,26 @@
                          sectionModel2,
                          sectionModel3,
                          ] mutableCopy]];
+}
+
+- (void)setCellsUI {
+    [super setCellsUI];
     
-    NRDCellModel *model0 = [[NRDCellModel alloc] initWithCellType:NRDCellTypeLab];
-    model0.labText = @"贷款贷款贷";
+    NRDLoadProductRateModel *model0 = [[NRDLoadProductRateModel alloc] initWithCellType:NRDCellTypeLoadProductRate];
+    model0.loadMoneyMinKey = @"function_min";
+    model0.loadMoneyMaxKey = @"function_max";
+    model0.monRateKey = @"function_month_rate";
+    model0.managerRateKey = @"function_manage_rate";
+    model0.monsKey = @"function_time_month";
     model0.cellHeight = 85;
     
     NRDCellModel *model1 = [[NRDCellModel alloc] initWithCellType:NRDCellTypeDisplayMutiRowLab];
-    model1.cellHeight = 44;
+    if ([[self.model valueForKey:@"function_type"] integerValue] == 1) {//工薪贷
+        model1.cellHeight = 44;
+    }
+    if ([[self.model valueForKey:@"function_type"] integerValue] == 2) {//助学贷
+        model1.cellHeight = 90;
+    }
     model1.keyString = @"function_condition";
     
     NRDCellModel *model2 = [[NRDCellModel alloc] initWithCellType:NRDCellTypeDisplayMutiRowLab];

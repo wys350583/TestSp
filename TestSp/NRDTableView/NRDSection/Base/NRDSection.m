@@ -12,6 +12,8 @@
 
 @property (nonatomic, strong)NRDSectionModel *model;
 
+@property (nonatomic, strong)id reqModel;
+
 @end
 
 @implementation NRDSection
@@ -35,6 +37,14 @@
 
 - (NRDSectionModel *)displayModel {
     return _model;
+}
+
+- (void)setReqData:(id)reqModel {
+    _reqModel = reqModel;
+}
+
+- (id)reqModel {
+    return _reqModel;
 }
 
 @end

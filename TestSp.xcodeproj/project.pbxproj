@@ -67,6 +67,10 @@
 		F8DB1B471C3CBBFC00264963 /* NRDHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB1B461C3CBBFC00264963 /* NRDHeaderModel.m */; };
 		F8DB1B4A1C3CBC1B00264963 /* UIView+NRDHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB1B491C3CBC1B00264963 /* UIView+NRDHeader.m */; };
 		F8DB1B4D1C3CBE8300264963 /* NRDImgVHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB1B4C1C3CBE8300264963 /* NRDImgVHeader.m */; };
+		F8DB1B521C3CE88C00264963 /* NRDLoadProductRateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB1B511C3CE88C00264963 /* NRDLoadProductRateCell.m */; };
+		F8DB1B551C3CE8D800264963 /* NRDLoadProductRateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB1B541C3CE8D800264963 /* NRDLoadProductRateModel.m */; };
+		F8DB1B5A1C3D031800264963 /* NSObject+NRDFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB1B591C3D031800264963 /* NSObject+NRDFormat.m */; };
+		F8DB1B5D1C3D077300264963 /* NSString+NRDFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DB1B5C1C3D077300264963 /* NSString+NRDFormat.m */; };
 		F8F0E7A41C3263E700616554 /* NRDFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F0E7621C3263E700616554 /* NRDFormCell.m */; };
 		F8F0E7A51C3263E700616554 /* NRDCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F0E7651C3263E700616554 /* NRDCellModel.m */; };
 		F8F0E7A61C3263E700616554 /* UITableViewCell+NRDCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F0E7671C3263E700616554 /* UITableViewCell+NRDCell.m */; };
@@ -75,6 +79,11 @@
 		F8F0E7C31C3263E700616554 /* singleBtnImage_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F0E7A01C3263E700616554 /* singleBtnImage_selected@2x.png */; };
 		F8F0E7C41C3263E700616554 /* singleBtnImage_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F0E7A11C3263E700616554 /* singleBtnImage_selected@3x.png */; };
 		F8F0E7C51C3263E700616554 /* NRDTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F0E7A31C3263E700616554 /* NRDTableView.m */; };
+		F8F8B4531C3E368E008DE652 /* PersonalInfoVerifyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F8B4521C3E368E008DE652 /* PersonalInfoVerifyVC.m */; };
+		F8F8B4561C3E3BDC008DE652 /* NRDNormalTwoProgressSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F8B4551C3E3BDC008DE652 /* NRDNormalTwoProgressSection.m */; };
+		F8F8B46A1C3FC313008DE652 /* XNVerifyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F8B4691C3FC313008DE652 /* XNVerifyRequest.m */; };
+		F8F8B4701C3FC330008DE652 /* NRDNormalTwoProgressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F8B46D1C3FC330008DE652 /* NRDNormalTwoProgressModel.m */; };
+		F8F8B4711C3FC330008DE652 /* NRDNormalTwoProgressSection.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F8B46F1C3FC330008DE652 /* NRDNormalTwoProgressSection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -198,6 +207,14 @@
 		F8DB1B4B1C3CBE8300264963 /* NRDImgVHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRDImgVHeader.h; sourceTree = "<group>"; };
 		F8DB1B4C1C3CBE8300264963 /* NRDImgVHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRDImgVHeader.m; sourceTree = "<group>"; };
 		F8DB1B4E1C3CBEC400264963 /* NRDHeaderDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NRDHeaderDefine.h; sourceTree = "<group>"; };
+		F8DB1B501C3CE88C00264963 /* NRDLoadProductRateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRDLoadProductRateCell.h; sourceTree = "<group>"; };
+		F8DB1B511C3CE88C00264963 /* NRDLoadProductRateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRDLoadProductRateCell.m; sourceTree = "<group>"; };
+		F8DB1B531C3CE8D800264963 /* NRDLoadProductRateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRDLoadProductRateModel.h; sourceTree = "<group>"; };
+		F8DB1B541C3CE8D800264963 /* NRDLoadProductRateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRDLoadProductRateModel.m; sourceTree = "<group>"; };
+		F8DB1B581C3D031800264963 /* NSObject+NRDFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NRDFormat.h"; sourceTree = "<group>"; };
+		F8DB1B591C3D031800264963 /* NSObject+NRDFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NRDFormat.m"; sourceTree = "<group>"; };
+		F8DB1B5B1C3D077300264963 /* NSString+NRDFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NRDFormat.h"; sourceTree = "<group>"; };
+		F8DB1B5C1C3D077300264963 /* NSString+NRDFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NRDFormat.m"; sourceTree = "<group>"; };
 		F8F0E7611C3263E700616554 /* NRDFormCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRDFormCell.h; sourceTree = "<group>"; };
 		F8F0E7621C3263E700616554 /* NRDFormCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRDFormCell.m; sourceTree = "<group>"; };
 		F8F0E7631C3263E700616554 /* NRDCellDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRDCellDefine.h; sourceTree = "<group>"; };
@@ -211,6 +228,16 @@
 		F8F0E7A11C3263E700616554 /* singleBtnImage_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "singleBtnImage_selected@3x.png"; sourceTree = "<group>"; };
 		F8F0E7A21C3263E700616554 /* NRDTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRDTableView.h; sourceTree = "<group>"; };
 		F8F0E7A31C3263E700616554 /* NRDTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRDTableView.m; sourceTree = "<group>"; };
+		F8F8B4511C3E368E008DE652 /* PersonalInfoVerifyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalInfoVerifyVC.h; sourceTree = "<group>"; };
+		F8F8B4521C3E368E008DE652 /* PersonalInfoVerifyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalInfoVerifyVC.m; sourceTree = "<group>"; };
+		F8F8B4541C3E3BDC008DE652 /* NRDNormalTwoProgressSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRDNormalTwoProgressSection.h; sourceTree = "<group>"; };
+		F8F8B4551C3E3BDC008DE652 /* NRDNormalTwoProgressSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRDNormalTwoProgressSection.m; sourceTree = "<group>"; };
+		F8F8B4681C3FC313008DE652 /* XNVerifyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XNVerifyRequest.h; sourceTree = "<group>"; };
+		F8F8B4691C3FC313008DE652 /* XNVerifyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XNVerifyRequest.m; sourceTree = "<group>"; };
+		F8F8B46C1C3FC330008DE652 /* NRDNormalTwoProgressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRDNormalTwoProgressModel.h; sourceTree = "<group>"; };
+		F8F8B46D1C3FC330008DE652 /* NRDNormalTwoProgressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRDNormalTwoProgressModel.m; sourceTree = "<group>"; };
+		F8F8B46E1C3FC330008DE652 /* NRDNormalTwoProgressSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRDNormalTwoProgressSection.h; sourceTree = "<group>"; };
+		F8F8B46F1C3FC330008DE652 /* NRDNormalTwoProgressSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRDNormalTwoProgressSection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +272,7 @@
 		F85085811C3B644E0036231A /* NRDSection */ = {
 			isa = PBXGroup;
 			children = (
+				F8F8B46B1C3FC330008DE652 /* CustomSection */,
 				F85085821C3B644E0036231A /* Base */,
 				F85085831C3B644E0036231A /* Sections */,
 			);
@@ -288,6 +316,8 @@
 				F85086041C3BA2E40036231A /* NRDHorzLineImgVLabSection.m */,
 				F85086061C3BA2F30036231A /* NRDHorzLineImgVLab_D_DetailLabSection.h */,
 				F85086071C3BA2F30036231A /* NRDHorzLineImgVLab_D_DetailLabSection.m */,
+				F8F8B4541C3E3BDC008DE652 /* NRDNormalTwoProgressSection.h */,
+				F8F8B4551C3E3BDC008DE652 /* NRDNormalTwoProgressSection.m */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -392,6 +422,7 @@
 		F884A0251C2AD52B000A9F18 /* TestSp */ = {
 			isa = PBXGroup;
 			children = (
+				F8F8B4671C3FC313008DE652 /* Model */,
 				F8F0E75E1C3263E700616554 /* NRDTableView */,
 				F884A0291C2AD52B000A9F18 /* AppDelegate.h */,
 				F884A02A1C2AD52B000A9F18 /* AppDelegate.m */,
@@ -406,6 +437,8 @@
 				F884A0261C2AD52B000A9F18 /* Supporting Files */,
 				F850857E1C3B57710036231A /* PersonalInfoVerifyTV.h */,
 				F850857F1C3B57710036231A /* PersonalInfoVerifyTV.m */,
+				F8F8B4511C3E368E008DE652 /* PersonalInfoVerifyVC.h */,
+				F8F8B4521C3E368E008DE652 /* PersonalInfoVerifyVC.m */,
 				F85086091C3BC2B90036231A /* LoanProductDetailTV.h */,
 				F850860A1C3BC2B90036231A /* LoanProductDetailTV.m */,
 				F850860C1C3BCAA90036231A /* LoanProductDetailVC.h */,
@@ -454,9 +487,40 @@
 			path = Headers;
 			sourceTree = "<group>";
 		};
+		F8DB1B4F1C3CE88C00264963 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				F8DB1B501C3CE88C00264963 /* NRDLoadProductRateCell.h */,
+				F8DB1B511C3CE88C00264963 /* NRDLoadProductRateCell.m */,
+				F8DB1B531C3CE8D800264963 /* NRDLoadProductRateModel.h */,
+				F8DB1B541C3CE8D800264963 /* NRDLoadProductRateModel.m */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		F8DB1B561C3D02DA00264963 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F8DB1B571C3D02DA00264963 /* Category */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F8DB1B571C3D02DA00264963 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F8DB1B581C3D031800264963 /* NSObject+NRDFormat.h */,
+				F8DB1B591C3D031800264963 /* NSObject+NRDFormat.m */,
+				F8DB1B5B1C3D077300264963 /* NSString+NRDFormat.h */,
+				F8DB1B5C1C3D077300264963 /* NSString+NRDFormat.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		F8F0E75E1C3263E700616554 /* NRDTableView */ = {
 			isa = PBXGroup;
 			children = (
+				F8DB1B561C3D02DA00264963 /* Tools */,
 				F8DB1B391C3CBA5400264963 /* NRDHeader */,
 				F85085811C3B644E0036231A /* NRDSection */,
 				F8F0E75F1C3263E700616554 /* NRDCell */,
@@ -471,6 +535,7 @@
 			children = (
 				F8F0E7601C3263E700616554 /* Base */,
 				F850858A1C3B6BF10036231A /* Cells */,
+				F8DB1B4F1C3CE88C00264963 /* CustomCells */,
 				F850858F1C3B6BF10036231A /* DisplayCells */,
 				F85085A81C3B6BF10036231A /* FromCells */,
 				F8F0E79D1C3263E700616554 /* Resource */,
@@ -506,6 +571,26 @@
 				F8F0E7A11C3263E700616554 /* singleBtnImage_selected@3x.png */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		F8F8B4671C3FC313008DE652 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8F8B4681C3FC313008DE652 /* XNVerifyRequest.h */,
+				F8F8B4691C3FC313008DE652 /* XNVerifyRequest.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8F8B46B1C3FC330008DE652 /* CustomSection */ = {
+			isa = PBXGroup;
+			children = (
+				F8F8B46C1C3FC330008DE652 /* NRDNormalTwoProgressModel.h */,
+				F8F8B46D1C3FC330008DE652 /* NRDNormalTwoProgressModel.m */,
+				F8F8B46E1C3FC330008DE652 /* NRDNormalTwoProgressSection.h */,
+				F8F8B46F1C3FC330008DE652 /* NRDNormalTwoProgressSection.m */,
+			);
+			path = CustomSection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -642,16 +727,22 @@
 				F85085CA1C3B6BF10036231A /* NRDLabel_D_DetailLabelCell.m in Sources */,
 				F85085801C3B57710036231A /* PersonalInfoVerifyTV.m in Sources */,
 				F85085F01C3B97330036231A /* UIView+NRDSection.m in Sources */,
+				F8DB1B5D1C3D077300264963 /* NSString+NRDFormat.m in Sources */,
+				F8DB1B5A1C3D031800264963 /* NSObject+NRDFormat.m in Sources */,
 				F85085D71C3B6BF10036231A /* NRDLabelTextFieldCell.m in Sources */,
+				F8F8B4561C3E3BDC008DE652 /* NRDNormalTwoProgressSection.m in Sources */,
 				F85085F31C3B9EBA0036231A /* NRDNormalLabSection.m in Sources */,
 				F85085E01C3B73B60036231A /* NRDDisplayLabelCell.m in Sources */,
+				F8DB1B551C3CE8D800264963 /* NRDLoadProductRateModel.m in Sources */,
 				F85085E71C3B96600036231A /* NRDHorzLineSection.m in Sources */,
 				F85085D91C3B6BF10036231A /* NRDLabelTextFieldNumCell.m in Sources */,
+				F8F8B4531C3E368E008DE652 /* PersonalInfoVerifyVC.m in Sources */,
 				F85085CC1C3B6BF10036231A /* NRDLabelDetailLabelArrowRightCell.m in Sources */,
 				F85085C81C3B6BF10036231A /* NRDImageLabelDetailLabelCell.m in Sources */,
 				F8DB1B471C3CBBFC00264963 /* NRDHeaderModel.m in Sources */,
 				F85085D31C3B6BF10036231A /* NRDImageTextFieldNumCell.m in Sources */,
 				F8F0E7A51C3263E700616554 /* NRDCellModel.m in Sources */,
+				F8F8B4701C3FC330008DE652 /* NRDNormalTwoProgressModel.m in Sources */,
 				F85085FF1C3BA2BE0036231A /* NRDHorzLineLabSection.m in Sources */,
 				F8DB1B4D1C3CBE8300264963 /* NRDImgVHeader.m in Sources */,
 				F8F0E7A41C3263E700616554 /* NRDFormCell.m in Sources */,
@@ -664,6 +755,7 @@
 				F85085C11C3B6BF10036231A /* NRDFormImageCell.m in Sources */,
 				F884A02E1C2AD52B000A9F18 /* ViewController.m in Sources */,
 				F85085D01C3B6BF10036231A /* NRDImageTextFieldArrowRightCell.m in Sources */,
+				F8F8B46A1C3FC313008DE652 /* XNVerifyRequest.m in Sources */,
 				F85085CD1C3B6BF10036231A /* NRDLabelDetailLabelCell.m in Sources */,
 				F85085C51C3B6BF10036231A /* NRDImageLabelArrowRightCell.m in Sources */,
 				F884A02B1C2AD52B000A9F18 /* AppDelegate.m in Sources */,
@@ -677,8 +769,10 @@
 				F85085D51C3B6BF10036231A /* NRDLabelSingleBtnSingleBtnCell.m in Sources */,
 				F85085C31C3B6BF10036231A /* NRDImageLabel_D_DetailLabelArrowRightCell.m in Sources */,
 				F8DB1B381C3CACFF00264963 /* NRDDisplayMutiRowLabCell.m in Sources */,
+				F8F8B4711C3FC330008DE652 /* NRDNormalTwoProgressSection.m in Sources */,
 				F85085CF1C3B6BF10036231A /* NRDImageSingleBtnSingleBtnCell.m in Sources */,
 				F85085D61C3B6BF10036231A /* NRDLabelTextFieldArrowRightCell.m in Sources */,
+				F8DB1B521C3CE88C00264963 /* NRDLoadProductRateCell.m in Sources */,
 				F884A0281C2AD52B000A9F18 /* main.m in Sources */,
 				F8DB1B4A1C3CBC1B00264963 /* UIView+NRDHeader.m in Sources */,
 				F85086021C3BA2D00036231A /* NRDHorzLineLab_D_DetailLabSection.m in Sources */,

@@ -16,8 +16,6 @@
 
 @property (nonatomic, strong)NSMutableArray *sections;
 
-@property (nonatomic, strong)id model;
-
 @end
 
 @implementation NRDTableView
@@ -54,6 +52,24 @@
     self.backgroundColor = [UIColor colorWithRed:0.97 green:0.97 blue:0.97 alpha:1];
     self.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableFooterView = [[UIView alloc] init];
+    
+    [self setHeaderUI];
+    
+    [self setSectionsUI];
+    
+    [self setCellsUI];
+}
+
+- (void)setHeaderUI {
+    
+}
+
+- (void)setSectionsUI {
+
+}
+
+- (void)setCellsUI {
+
 }
 
 #pragma mark -----tableView
@@ -87,7 +103,11 @@
 
 //sectionHeader's height
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return self.sections ? 38 : 0.001;
+    if (self.sections) {
+        NRDSectionModel *model = self.sections[section];
+        return model.sectionHeight;
+    }
+    return 0.001;
 }
 
 //sectionHeader's view
@@ -95,6 +115,7 @@
     UIView *view;
     if (section < self.sections.count) {
         view = [[UIView alloc] initWithModel:self.sections[section]];
+        [view setReqData:self.model];
     }
     return view;
 }

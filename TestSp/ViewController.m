@@ -21,11 +21,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     self.cells = @[
                    @"LoanProductDetailVC",
-                   
+                   @"PersonalInfoVerifyVC"
                    ].mutableCopy;
-    
     
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height - 64)];
     self.tableView.delegate = self;

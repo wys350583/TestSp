@@ -8,7 +8,7 @@
 
 #import "NRDLabelTextFieldCell.h"
 
-@interface NRDLabelTextFieldCell()<UITextFieldDelegate>
+@interface NRDLabelTextFieldCell()
 
 @end
 
@@ -47,9 +47,13 @@
         txf.textColor = cellTxfTextColor;
         txf.clearButtonMode = UITextFieldViewModeWhileEditing;
         txf.keyboardType = UIKeyboardTypeDefault;
-        txf.delegate = self;
         txf;
     });
+    @weakify(self);
+    [self.txf.rac_textSignal subscribeNext:^(id x) {
+        @strongify(self);
+        [self.reqModel setValue:x forKey:self.displayModel.keyString];
+    }];
 }
 
 - (void)setDisplayData:(NRDCellModel *)model {
@@ -62,16 +66,6 @@
     if (reqModel && self.displayModel.keyString) {
         self.txf.text = [reqModel valueForKey:self.displayModel.keyString];
     }
-}
-
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
-    [self.reqModel setValue:textField.text forKey:self.displayModel.keyString];
-    return YES;
-}
-
-- (BOOL)textFieldShouldEndEditing:(UITextField *)textField {
-    [self.reqModel setValue:textField.text forKey:self.displayModel.keyString];
-    return YES;
 }
 
 @end
