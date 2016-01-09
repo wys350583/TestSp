@@ -19,4 +19,6 @@ typedef NS_ENUM(NSInteger, NRDNormalTwoProgressType) {
 
 @property (nonatomic, strong)NSArray *labelTexts;
 
+@property (nonatomic, strong)NSArray *observerPropertys;
+
 @end

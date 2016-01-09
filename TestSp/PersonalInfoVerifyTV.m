@@ -19,14 +19,10 @@
 
 - (void)setUI {
     [super setUI];
-    
-    
-    
 }
 
 - (void)setHeaderUI {
     [super setHeaderUI];
-
 }
 
 - (void)setSectionsUI {
@@ -35,6 +31,7 @@
     sectionModel.progressType = NRDNormalTwoProgressTypeFirst;
     sectionModel.labelTexts = @[@"身份信息", @"银行卡信息", @"申请",];
     sectionModel.sectionHeight = 44;
+    sectionModel.observerPropertys = @[@"real_name", @"id_cardnum"];
     [self setSections:[@[
                          sectionModel,
                          

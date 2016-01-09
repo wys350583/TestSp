@@ -12,25 +12,25 @@
 
 @interface NRDNormalTwoProgressSection()
 
-@property (nonatomic, strong)NSMutableArray <CAShapeLayer *> *circleLayers;
+@property (nonatomic, strong)NSMutableArray <CAShapeLayer *> *circleLayers; //三个圆圈
 
-@property (nonatomic, strong)NSMutableArray <UIProgressView *> *progressViews;
+@property (nonatomic, strong)NSMutableArray <UIProgressView *> *progressViews; //两个进度条
 
-@property (nonatomic, strong)NSMutableArray <UILabel *> *labels;
+@property (nonatomic, strong)NSMutableArray <UILabel *> *labels;//3个label
 
-@property (nonatomic, assign)CGFloat total;
+@property (nonatomic, assign)CGFloat total;//观察的总数
 
-@property (nonatomic, assign)CGFloat num;
+@property (nonatomic, assign)CGFloat num;//有值的数
 
-@property (nonatomic, assign)CGFloat progress;
+@property (nonatomic, assign)CGFloat progress;//计算出的进度
 
-@property (nonatomic, strong)NRDNormalTwoProgressModel *model;
+@property (nonatomic, strong)NRDNormalTwoProgressModel *model;//显示的model
 
-@property (nonatomic, assign)NSInteger progressViewIndex;
+@property (nonatomic, assign)NSInteger progressViewIndex;//进度条index
 
-@property (nonatomic, assign)CGColorRef normalColor;
+@property (nonatomic, strong)UIColor *selectedColor;
 
-@property (nonatomic, assign)CGColorRef selectedColor;
+@property (nonatomic, strong)UIColor *normalColor;
 
 @end
 
@@ -56,8 +56,8 @@
     
     _lineWidth = _twoCircleCenterWidth - 2 * _circleRadius;
     
-    self.normalColor = [UIColor colorWithRed:0.6 green:0.6 blue:0.6 alpha:1].CGColor;
-    self.selectedColor = [UIColor orangeColor].CGColor;
+    self.normalColor = [UIColor colorWithRed:0.6 green:0.6 blue:0.6 alpha:1];
+    self.selectedColor = [UIColor orangeColor];
     
     [self setLine];
     
@@ -79,7 +79,7 @@
         
         CAShapeLayer *layer = [CAShapeLayer layer];
         layer.path = circlePath.CGPath;
-        layer.strokeColor = self.normalColor;
+        layer.strokeColor = self.normalColor.CGColor;
         layer.fillColor = [UIColor whiteColor].CGColor;
         layer.lineWidth = 1.2;
         [self.layer addSublayer:layer];
@@ -91,7 +91,7 @@
     self.progressViews = @[].mutableCopy;
     for (NSInteger i = 0; i < 2; i++) {
         UIProgressView *progressView = [[UIProgressView alloc] initWithFrame:CGRectMake((_circleCenterX + _circleRadius) + _twoCircleCenterWidth * i, _circleCenterY - 1, _lineWidth, 1)];
-        progressView.tintColor = [UIColor orangeColor];
+        progressView.tintColor = self.selectedColor;
         [self addSubview:progressView];
         [self.progressViews addObject:progressView];
     }
@@ -104,7 +104,7 @@
         [self addSubview:lable];
         lable.font = [UIFont systemFontOfSize:10];
         lable.textAlignment = NSTextAlignmentCenter;
-        lable.textColor = [UIColor colorWithRed:0.6 green:0.6 blue:0.6 alpha:1];
+        lable.textColor = self.normalColor;
         [self.labels addObject:lable];
     }
 }
@@ -115,13 +115,14 @@
     [self setOrangeCircle];
     [self setOrangeLine];
     [self setOrangeLabel];
+    self.total = (CGFloat)model.observerPropertys.count;
 }
 
 - (void)setOrangeCircle {
     for (NSInteger i = 0; i < self.circleLayers.count; i++) {
         if (i < self.progressViewIndex) {
-            self.circleLayers[i].strokeColor = self.selectedColor;
-            self.circleLayers[i].fillColor = self.selectedColor;
+            self.circleLayers[i].strokeColor = self.selectedColor.CGColor;
+            self.circleLayers[i].fillColor = self.selectedColor.CGColor;
         }
     }
 }
@@ -138,9 +139,40 @@
     for (NSInteger i = 0; i < self.labels.count; i++) {
         self.labels[i].text = self.model.labelTexts[i];
         if (i < self.progressViewIndex) {
-            self.labels[i].textColor = [UIColor orangeColor];
+            self.labels[i].textColor = self.selectedColor;
         }
     }
+}
+
+- (void)setReqData:(id)reqModel {
+    [super setReqData:reqModel];
+    for (NSString *observerProperty in self.model.observerPropertys) {
+        [[self.reqModel rac_valuesAndChangesForKeyPath:observerProperty options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld observer:nil] subscribeNext:^(id x) {
+            RACTuple *tuple = x;
+            NSString *text = [NSString stringWithFormat:@"%@", tuple.first];
+
+            if (text.length < 2) {
+                [self changeNum];
+            }
+
+        }];
+    }
+}
+
+- (void)changeNum {
+    CGFloat haveValueProperty = 0;
+    for (NSString *observerProperty in self.model.observerPropertys) {
+        if ([[self.reqModel valueForKey:observerProperty] toString].length > 0) {
+            haveValueProperty ++;
+        }
+    }
+    self.num = haveValueProperty;
+    NSLog(@"%f",self.num);
+}
+
+- (void)setNum:(CGFloat)num {
+    _num = num;
+    self.progress = self.num / self.total;
 }
 
 - (void)setProgress:(CGFloat)progress {
@@ -153,31 +185,31 @@
 
     [RACObserve(self.progressViews[self.progressViewIndex], progress) subscribeNext:^(id x) {
         if ([x floatValue] > 0) {
-            self.circleLayers[self.progressViewIndex].fillColor = self.selectedColor;
-            self.circleLayers[self.progressViewIndex].strokeColor = self.selectedColor;
-            self.labels[self.progressViewIndex].textColor = [UIColor orangeColor];
+            self.circleLayers[self.progressViewIndex].fillColor = self.selectedColor.CGColor;
+            self.circleLayers[self.progressViewIndex].strokeColor = self.selectedColor.CGColor;
+            self.labels[self.progressViewIndex].textColor = self.selectedColor;
         }
         else {
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((1.0 / self.model.observerPropertys.count) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 
                 self.circleLayers[self.progressViewIndex].fillColor = [UIColor whiteColor].CGColor;
-                self.circleLayers[self.progressViewIndex].strokeColor = [UIColor colorWithRed:0.6 green:0.6 blue:0.6 alpha:1].CGColor;
-                self.labels[self.progressViewIndex].textColor = [UIColor colorWithRed:0.6 green:0.6 blue:0.6 alpha:1];
+                self.circleLayers[self.progressViewIndex].strokeColor = self.normalColor.CGColor;
+                self.labels[self.progressViewIndex].textColor = self.normalColor;
 
             });
         }
         if (self.model.progressType == NRDNormalTwoProgressTypeSecond && [x floatValue] == 1) {
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                self.circleLayers[self.circleLayers.count - 1].fillColor = self.selectedColor;
-                self.circleLayers[self.circleLayers.count - 1].strokeColor = self.selectedColor;
-                self.labels[self.circleLayers.count - 1].textColor = [UIColor orangeColor];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((1.0 / self.model.observerPropertys.count) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                self.circleLayers[self.circleLayers.count - 1].fillColor = self.selectedColor.CGColor;
+                self.circleLayers[self.circleLayers.count - 1].strokeColor = self.selectedColor.CGColor;
+                self.labels[self.circleLayers.count - 1].textColor = self.selectedColor;
 
             });
         }
         else {
-            self.circleLayers[self.circleLayers.count - 1].strokeColor = [UIColor colorWithRed:0.6 green:0.6 blue:0.6 alpha:1].CGColor;
+            self.circleLayers[self.circleLayers.count - 1].strokeColor = self.normalColor.CGColor;
             self.circleLayers[self.circleLayers.count - 1].fillColor = [UIColor whiteColor].CGColor;
-            self.labels[self.circleLayers.count - 1].textColor = [UIColor colorWithRed:0.6 green:0.6 blue:0.6 alpha:1];
+            self.labels[self.circleLayers.count - 1].textColor = self.normalColor;
         }
     }];
 }
